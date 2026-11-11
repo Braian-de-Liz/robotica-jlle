@@ -1,0 +1,3317 @@
+{
+  "type": "base",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "5341e492-91e0-430f-950a-1da3d418d03b",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "footprints": [
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "cargo_nome"
+      ],
+      "writes": [
+        "s|enum|public.cargo_nome",
+        "n|enum|public.cargo_nome",
+        "e|enum|public.cargo_nome",
+        "n|type|public.cargo_nome"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "edicao_status"
+      ],
+      "writes": [
+        "s|enum|public.edicao_status",
+        "n|enum|public.edicao_status",
+        "e|enum|public.edicao_status",
+        "n|type|public.edicao_status"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "escola_status"
+      ],
+      "writes": [
+        "s|enum|public.escola_status",
+        "n|enum|public.escola_status",
+        "e|enum|public.escola_status",
+        "n|type|public.escola_status"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "fase_chaveamento"
+      ],
+      "writes": [
+        "s|enum|public.fase_chaveamento",
+        "n|enum|public.fase_chaveamento",
+        "e|enum|public.fase_chaveamento",
+        "n|type|public.fase_chaveamento"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "status_declaracao"
+      ],
+      "writes": [
+        "s|enum|public.status_declaracao",
+        "n|enum|public.status_declaracao",
+        "e|enum|public.status_declaracao",
+        "n|type|public.status_declaracao"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "tipo_categoria_checklist"
+      ],
+      "writes": [
+        "s|enum|public.tipo_categoria_checklist",
+        "n|enum|public.tipo_categoria_checklist",
+        "e|enum|public.tipo_categoria_checklist",
+        "n|type|public.tipo_categoria_checklist"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "tipo_parceiro"
+      ],
+      "writes": [
+        "s|enum|public.tipo_parceiro",
+        "n|enum|public.tipo_parceiro",
+        "e|enum|public.tipo_parceiro",
+        "n|type|public.tipo_parceiro"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "tipo_post"
+      ],
+      "writes": [
+        "s|enum|public.tipo_post",
+        "n|enum|public.tipo_post",
+        "e|enum|public.tipo_post",
+        "n|type|public.tipo_post"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "avaliacao"
+      ],
+      "writes": [
+        "s|tbl|public.avaliacao",
+        "n|tbl|public.avaliacao",
+        "e|tbl|public.avaliacao",
+        "n|rel|public.avaliacao",
+        "n|type|public.avaliacao",
+        "n|rel|public.avaliacao_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "cargo"
+      ],
+      "writes": [
+        "s|tbl|public.cargo",
+        "n|tbl|public.cargo",
+        "e|tbl|public.cargo",
+        "n|rel|public.cargo",
+        "n|type|public.cargo",
+        "n|rel|public.cargo_pkey",
+        "n|rel|public.cargo_nome_key"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.cargo_nome"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "checklist_operacional"
+      ],
+      "writes": [
+        "s|tbl|public.checklist_operacional",
+        "n|tbl|public.checklist_operacional",
+        "e|tbl|public.checklist_operacional",
+        "n|rel|public.checklist_operacional",
+        "n|type|public.checklist_operacional",
+        "n|rel|public.checklist_operacional_pkey"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.tipo_categoria_checklist"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "contribuicao_fornecedor"
+      ],
+      "writes": [
+        "s|tbl|public.contribuicao_fornecedor",
+        "n|tbl|public.contribuicao_fornecedor",
+        "e|tbl|public.contribuicao_fornecedor",
+        "n|rel|public.contribuicao_fornecedor",
+        "n|type|public.contribuicao_fornecedor",
+        "n|rel|public.contribuicao_fornecedor_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "convidado_acesso"
+      ],
+      "writes": [
+        "s|tbl|public.convidado_acesso",
+        "n|tbl|public.convidado_acesso",
+        "e|tbl|public.convidado_acesso",
+        "n|rel|public.convidado_acesso",
+        "n|type|public.convidado_acesso",
+        "n|rel|public.convidado_acesso_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "edicao_evento"
+      ],
+      "writes": [
+        "s|tbl|public.edicao_evento",
+        "n|tbl|public.edicao_evento",
+        "e|tbl|public.edicao_evento",
+        "n|rel|public.edicao_evento",
+        "n|type|public.edicao_evento",
+        "n|rel|public.edicao_evento_pkey",
+        "n|rel|public.edicao_evento_ano_key"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.edicao_status"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "endereco"
+      ],
+      "writes": [
+        "s|tbl|public.endereco",
+        "n|tbl|public.endereco",
+        "e|tbl|public.endereco",
+        "n|rel|public.endereco",
+        "n|type|public.endereco",
+        "n|rel|public.endereco_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "equipe"
+      ],
+      "writes": [
+        "s|tbl|public.equipe",
+        "n|tbl|public.equipe",
+        "e|tbl|public.equipe",
+        "n|rel|public.equipe",
+        "n|type|public.equipe",
+        "n|rel|public.equipe_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "escola"
+      ],
+      "writes": [
+        "s|tbl|public.escola",
+        "n|tbl|public.escola",
+        "e|tbl|public.escola",
+        "n|rel|public.escola",
+        "n|type|public.escola",
+        "n|rel|public.escola_pkey",
+        "n|rel|public.escola_cnpj_key"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.escola_status"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "fornecedor_parceiro"
+      ],
+      "writes": [
+        "s|tbl|public.fornecedor_parceiro",
+        "n|tbl|public.fornecedor_parceiro",
+        "e|tbl|public.fornecedor_parceiro",
+        "n|rel|public.fornecedor_parceiro",
+        "n|type|public.fornecedor_parceiro",
+        "n|rel|public.fornecedor_parceiro_pkey"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.tipo_parceiro"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "membro_equipe"
+      ],
+      "writes": [
+        "s|tbl|public.membro_equipe",
+        "n|tbl|public.membro_equipe",
+        "e|tbl|public.membro_equipe",
+        "n|rel|public.membro_equipe",
+        "n|type|public.membro_equipe",
+        "n|rel|public.membro_equipe_pkey",
+        "n|rel|public.membro_equipe_qr_code_token_key"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.status_declaracao"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "meta_recurso"
+      ],
+      "writes": [
+        "s|tbl|public.meta_recurso",
+        "n|tbl|public.meta_recurso",
+        "e|tbl|public.meta_recurso",
+        "n|rel|public.meta_recurso",
+        "n|type|public.meta_recurso",
+        "n|rel|public.meta_recurso_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "modalidade"
+      ],
+      "writes": [
+        "s|tbl|public.modalidade",
+        "n|tbl|public.modalidade",
+        "e|tbl|public.modalidade",
+        "n|rel|public.modalidade",
+        "n|type|public.modalidade",
+        "n|rel|public.modalidade_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "post_blog"
+      ],
+      "writes": [
+        "s|tbl|public.post_blog",
+        "n|tbl|public.post_blog",
+        "e|tbl|public.post_blog",
+        "n|rel|public.post_blog",
+        "n|type|public.post_blog",
+        "n|rel|public.post_blog_pkey"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.tipo_post"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "torneio_disputa"
+      ],
+      "writes": [
+        "s|tbl|public.torneio_disputa",
+        "n|tbl|public.torneio_disputa",
+        "e|tbl|public.torneio_disputa",
+        "n|rel|public.torneio_disputa",
+        "n|type|public.torneio_disputa",
+        "n|rel|public.torneio_disputa_pkey"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.fase_chaveamento"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "usuario"
+      ],
+      "writes": [
+        "s|tbl|public.usuario",
+        "n|tbl|public.usuario",
+        "e|tbl|public.usuario",
+        "n|rel|public.usuario",
+        "n|type|public.usuario",
+        "n|rel|public.usuario_pkey",
+        "n|rel|public.usuario_email_key",
+        "n|rel|public.usuario_cpf_cnpj_key"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "avaliacao"
+      ],
+      "writes": [
+        "s|fk|public.avaliacao.avaliacao_torneio_disputa_id_torneio_disputa_id_fkey",
+        "n|fk|public.avaliacao.avaliacao_torneio_disputa_id_torneio_disputa_id_fkey",
+        "e|fk|public.avaliacao.avaliacao_torneio_disputa_id_torneio_disputa_id_fkey",
+        "n|con|public.avaliacao.avaliacao_torneio_disputa_id_torneio_disputa_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.avaliacao",
+        "n|sch|public",
+        "n|tbl|public.torneio_disputa",
+        "n|sch|public",
+        "n|col|public.avaliacao.torneio_disputa_id",
+        "n|col|public.torneio_disputa.id",
+        "e|uniqueness|public.torneio_disputa.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "avaliacao"
+      ],
+      "writes": [
+        "s|fk|public.avaliacao.avaliacao_equipe_id_equipe_id_fkey",
+        "n|fk|public.avaliacao.avaliacao_equipe_id_equipe_id_fkey",
+        "e|fk|public.avaliacao.avaliacao_equipe_id_equipe_id_fkey",
+        "n|con|public.avaliacao.avaliacao_equipe_id_equipe_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.avaliacao",
+        "n|sch|public",
+        "n|tbl|public.equipe",
+        "n|sch|public",
+        "n|col|public.avaliacao.equipe_id",
+        "n|col|public.equipe.id",
+        "e|uniqueness|public.equipe.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "avaliacao"
+      ],
+      "writes": [
+        "s|fk|public.avaliacao.avaliacao_avaliador_id_usuario_id_fkey",
+        "n|fk|public.avaliacao.avaliacao_avaliador_id_usuario_id_fkey",
+        "e|fk|public.avaliacao.avaliacao_avaliador_id_usuario_id_fkey",
+        "n|con|public.avaliacao.avaliacao_avaliador_id_usuario_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.avaliacao",
+        "n|sch|public",
+        "n|tbl|public.usuario",
+        "n|sch|public",
+        "n|col|public.avaliacao.avaliador_id",
+        "n|col|public.usuario.id",
+        "e|uniqueness|public.usuario.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "checklist_operacional"
+      ],
+      "writes": [
+        "s|fk|public.checklist_operacional.checklist_operacional_edicao_id_edicao_evento_id_fkey",
+        "n|fk|public.checklist_operacional.checklist_operacional_edicao_id_edicao_evento_id_fkey",
+        "e|fk|public.checklist_operacional.checklist_operacional_edicao_id_edicao_evento_id_fkey",
+        "n|con|public.checklist_operacional.checklist_operacional_edicao_id_edicao_evento_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.checklist_operacional",
+        "n|sch|public",
+        "n|tbl|public.edicao_evento",
+        "n|sch|public",
+        "n|col|public.checklist_operacional.edicao_id",
+        "n|col|public.edicao_evento.id",
+        "e|uniqueness|public.edicao_evento.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "checklist_operacional"
+      ],
+      "writes": [
+        "s|fk|public.checklist_operacional.checklist_operacional_responsavel_id_usuario_id_fkey",
+        "n|fk|public.checklist_operacional.checklist_operacional_responsavel_id_usuario_id_fkey",
+        "e|fk|public.checklist_operacional.checklist_operacional_responsavel_id_usuario_id_fkey",
+        "n|con|public.checklist_operacional.checklist_operacional_responsavel_id_usuario_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.checklist_operacional",
+        "n|sch|public",
+        "n|tbl|public.usuario",
+        "n|sch|public",
+        "n|col|public.checklist_operacional.responsavel_id",
+        "n|col|public.usuario.id",
+        "e|uniqueness|public.usuario.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "contribuicao_fornecedor"
+      ],
+      "writes": [
+        "s|fk|public.contribuicao_fornecedor.contribuicao_fornecedor_meta_recurso_id_meta_recurso_id_fkey",
+        "n|fk|public.contribuicao_fornecedor.contribuicao_fornecedor_meta_recurso_id_meta_recurso_id_fkey",
+        "e|fk|public.contribuicao_fornecedor.contribuicao_fornecedor_meta_recurso_id_meta_recurso_id_fkey",
+        "n|con|public.contribuicao_fornecedor.contribuicao_fornecedor_meta_recurso_id_meta_recurso_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.contribuicao_fornecedor",
+        "n|sch|public",
+        "n|tbl|public.meta_recurso",
+        "n|sch|public",
+        "n|col|public.contribuicao_fornecedor.meta_recurso_id",
+        "n|col|public.meta_recurso.id",
+        "e|uniqueness|public.meta_recurso.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "contribuicao_fornecedor"
+      ],
+      "writes": [
+        "s|fk|public.contribuicao_fornecedor.contribuicao_fornecedor_lnoUC4wWBejA_fkey",
+        "n|fk|public.contribuicao_fornecedor.contribuicao_fornecedor_lnoUC4wWBejA_fkey",
+        "e|fk|public.contribuicao_fornecedor.contribuicao_fornecedor_lnoUC4wWBejA_fkey",
+        "n|con|public.contribuicao_fornecedor.contribuicao_fornecedor_lnoUC4wWBejA_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.contribuicao_fornecedor",
+        "n|sch|public",
+        "n|tbl|public.fornecedor_parceiro",
+        "n|sch|public",
+        "n|col|public.contribuicao_fornecedor.fornecedor_id",
+        "n|col|public.fornecedor_parceiro.id",
+        "e|uniqueness|public.fornecedor_parceiro.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "convidado_acesso"
+      ],
+      "writes": [
+        "s|fk|public.convidado_acesso.convidado_acesso_edicao_id_edicao_evento_id_fkey",
+        "n|fk|public.convidado_acesso.convidado_acesso_edicao_id_edicao_evento_id_fkey",
+        "e|fk|public.convidado_acesso.convidado_acesso_edicao_id_edicao_evento_id_fkey",
+        "n|con|public.convidado_acesso.convidado_acesso_edicao_id_edicao_evento_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.convidado_acesso",
+        "n|sch|public",
+        "n|tbl|public.edicao_evento",
+        "n|sch|public",
+        "n|col|public.convidado_acesso.edicao_id",
+        "n|col|public.edicao_evento.id",
+        "e|uniqueness|public.edicao_evento.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "convidado_acesso"
+      ],
+      "writes": [
+        "s|fk|public.convidado_acesso.convidado_acesso_voluntario_portaria_id_usuario_id_fkey",
+        "n|fk|public.convidado_acesso.convidado_acesso_voluntario_portaria_id_usuario_id_fkey",
+        "e|fk|public.convidado_acesso.convidado_acesso_voluntario_portaria_id_usuario_id_fkey",
+        "n|con|public.convidado_acesso.convidado_acesso_voluntario_portaria_id_usuario_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.convidado_acesso",
+        "n|sch|public",
+        "n|tbl|public.usuario",
+        "n|sch|public",
+        "n|col|public.convidado_acesso.voluntario_portaria_id",
+        "n|col|public.usuario.id",
+        "e|uniqueness|public.usuario.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "edicao_evento"
+      ],
+      "writes": [
+        "s|fk|public.edicao_evento.edicao_evento_local_sediador_id_endereco_id_fkey",
+        "n|fk|public.edicao_evento.edicao_evento_local_sediador_id_endereco_id_fkey",
+        "e|fk|public.edicao_evento.edicao_evento_local_sediador_id_endereco_id_fkey",
+        "n|con|public.edicao_evento.edicao_evento_local_sediador_id_endereco_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.edicao_evento",
+        "n|sch|public",
+        "n|tbl|public.endereco",
+        "n|sch|public",
+        "n|col|public.edicao_evento.local_sediador_id",
+        "n|col|public.endereco.id",
+        "e|uniqueness|public.endereco.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "equipe"
+      ],
+      "writes": [
+        "s|fk|public.equipe.equipe_escola_id_escola_id_fkey",
+        "n|fk|public.equipe.equipe_escola_id_escola_id_fkey",
+        "e|fk|public.equipe.equipe_escola_id_escola_id_fkey",
+        "n|con|public.equipe.equipe_escola_id_escola_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.equipe",
+        "n|sch|public",
+        "n|tbl|public.escola",
+        "n|sch|public",
+        "n|col|public.equipe.escola_id",
+        "n|col|public.escola.id",
+        "e|uniqueness|public.escola.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "equipe"
+      ],
+      "writes": [
+        "s|fk|public.equipe.equipe_edicao_id_edicao_evento_id_fkey",
+        "n|fk|public.equipe.equipe_edicao_id_edicao_evento_id_fkey",
+        "e|fk|public.equipe.equipe_edicao_id_edicao_evento_id_fkey",
+        "n|con|public.equipe.equipe_edicao_id_edicao_evento_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.equipe",
+        "n|sch|public",
+        "n|tbl|public.edicao_evento",
+        "n|sch|public",
+        "n|col|public.equipe.edicao_id",
+        "n|col|public.edicao_evento.id",
+        "e|uniqueness|public.edicao_evento.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "equipe"
+      ],
+      "writes": [
+        "s|fk|public.equipe.equipe_mentor_id_usuario_id_fkey",
+        "n|fk|public.equipe.equipe_mentor_id_usuario_id_fkey",
+        "e|fk|public.equipe.equipe_mentor_id_usuario_id_fkey",
+        "n|con|public.equipe.equipe_mentor_id_usuario_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.equipe",
+        "n|sch|public",
+        "n|tbl|public.usuario",
+        "n|sch|public",
+        "n|col|public.equipe.mentor_id",
+        "n|col|public.usuario.id",
+        "e|uniqueness|public.usuario.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "escola"
+      ],
+      "writes": [
+        "s|fk|public.escola.escola_usuario_gestor_id_usuario_id_fkey",
+        "n|fk|public.escola.escola_usuario_gestor_id_usuario_id_fkey",
+        "e|fk|public.escola.escola_usuario_gestor_id_usuario_id_fkey",
+        "n|con|public.escola.escola_usuario_gestor_id_usuario_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.escola",
+        "n|sch|public",
+        "n|tbl|public.usuario",
+        "n|sch|public",
+        "n|col|public.escola.usuario_gestor_id",
+        "n|col|public.usuario.id",
+        "e|uniqueness|public.usuario.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "escola"
+      ],
+      "writes": [
+        "s|fk|public.escola.escola_endereco_id_endereco_id_fkey",
+        "n|fk|public.escola.escola_endereco_id_endereco_id_fkey",
+        "e|fk|public.escola.escola_endereco_id_endereco_id_fkey",
+        "n|con|public.escola.escola_endereco_id_endereco_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.escola",
+        "n|sch|public",
+        "n|tbl|public.endereco",
+        "n|sch|public",
+        "n|col|public.escola.endereco_id",
+        "n|col|public.endereco.id",
+        "e|uniqueness|public.endereco.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "fornecedor_parceiro"
+      ],
+      "writes": [
+        "s|fk|public.fornecedor_parceiro.fornecedor_parceiro_endereco_id_endereco_id_fkey",
+        "n|fk|public.fornecedor_parceiro.fornecedor_parceiro_endereco_id_endereco_id_fkey",
+        "e|fk|public.fornecedor_parceiro.fornecedor_parceiro_endereco_id_endereco_id_fkey",
+        "n|con|public.fornecedor_parceiro.fornecedor_parceiro_endereco_id_endereco_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.fornecedor_parceiro",
+        "n|sch|public",
+        "n|tbl|public.endereco",
+        "n|sch|public",
+        "n|col|public.fornecedor_parceiro.endereco_id",
+        "n|col|public.endereco.id",
+        "e|uniqueness|public.endereco.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "membro_equipe"
+      ],
+      "writes": [
+        "s|fk|public.membro_equipe.membro_equipe_equipe_id_equipe_id_fkey",
+        "n|fk|public.membro_equipe.membro_equipe_equipe_id_equipe_id_fkey",
+        "e|fk|public.membro_equipe.membro_equipe_equipe_id_equipe_id_fkey",
+        "n|con|public.membro_equipe.membro_equipe_equipe_id_equipe_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.membro_equipe",
+        "n|sch|public",
+        "n|tbl|public.equipe",
+        "n|sch|public",
+        "n|col|public.membro_equipe.equipe_id",
+        "n|col|public.equipe.id",
+        "e|uniqueness|public.equipe.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "membro_equipe"
+      ],
+      "writes": [
+        "s|fk|public.membro_equipe.membro_equipe_participante_id_usuario_id_fkey",
+        "n|fk|public.membro_equipe.membro_equipe_participante_id_usuario_id_fkey",
+        "e|fk|public.membro_equipe.membro_equipe_participante_id_usuario_id_fkey",
+        "n|con|public.membro_equipe.membro_equipe_participante_id_usuario_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.membro_equipe",
+        "n|sch|public",
+        "n|tbl|public.usuario",
+        "n|sch|public",
+        "n|col|public.membro_equipe.participante_id",
+        "n|col|public.usuario.id",
+        "e|uniqueness|public.usuario.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "meta_recurso"
+      ],
+      "writes": [
+        "s|fk|public.meta_recurso.meta_recurso_edicao_id_edicao_evento_id_fkey",
+        "n|fk|public.meta_recurso.meta_recurso_edicao_id_edicao_evento_id_fkey",
+        "e|fk|public.meta_recurso.meta_recurso_edicao_id_edicao_evento_id_fkey",
+        "n|con|public.meta_recurso.meta_recurso_edicao_id_edicao_evento_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.meta_recurso",
+        "n|sch|public",
+        "n|tbl|public.edicao_evento",
+        "n|sch|public",
+        "n|col|public.meta_recurso.edicao_id",
+        "n|col|public.edicao_evento.id",
+        "e|uniqueness|public.edicao_evento.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "post_blog"
+      ],
+      "writes": [
+        "s|fk|public.post_blog.post_blog_edicao_id_edicao_evento_id_fkey",
+        "n|fk|public.post_blog.post_blog_edicao_id_edicao_evento_id_fkey",
+        "e|fk|public.post_blog.post_blog_edicao_id_edicao_evento_id_fkey",
+        "n|con|public.post_blog.post_blog_edicao_id_edicao_evento_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.post_blog",
+        "n|sch|public",
+        "n|tbl|public.edicao_evento",
+        "n|sch|public",
+        "n|col|public.post_blog.edicao_id",
+        "n|col|public.edicao_evento.id",
+        "e|uniqueness|public.edicao_evento.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "torneio_disputa"
+      ],
+      "writes": [
+        "s|fk|public.torneio_disputa.torneio_disputa_edicao_id_edicao_evento_id_fkey",
+        "n|fk|public.torneio_disputa.torneio_disputa_edicao_id_edicao_evento_id_fkey",
+        "e|fk|public.torneio_disputa.torneio_disputa_edicao_id_edicao_evento_id_fkey",
+        "n|con|public.torneio_disputa.torneio_disputa_edicao_id_edicao_evento_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.torneio_disputa",
+        "n|sch|public",
+        "n|tbl|public.edicao_evento",
+        "n|sch|public",
+        "n|col|public.torneio_disputa.edicao_id",
+        "n|col|public.edicao_evento.id",
+        "e|uniqueness|public.edicao_evento.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "torneio_disputa"
+      ],
+      "writes": [
+        "s|fk|public.torneio_disputa.torneio_disputa_modalidade_id_modalidade_id_fkey",
+        "n|fk|public.torneio_disputa.torneio_disputa_modalidade_id_modalidade_id_fkey",
+        "e|fk|public.torneio_disputa.torneio_disputa_modalidade_id_modalidade_id_fkey",
+        "n|con|public.torneio_disputa.torneio_disputa_modalidade_id_modalidade_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.torneio_disputa",
+        "n|sch|public",
+        "n|tbl|public.modalidade",
+        "n|sch|public",
+        "n|col|public.torneio_disputa.modalidade_id",
+        "n|col|public.modalidade.id",
+        "e|uniqueness|public.modalidade.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "torneio_disputa"
+      ],
+      "writes": [
+        "s|fk|public.torneio_disputa.torneio_disputa_equipe_a_id_equipe_id_fkey",
+        "n|fk|public.torneio_disputa.torneio_disputa_equipe_a_id_equipe_id_fkey",
+        "e|fk|public.torneio_disputa.torneio_disputa_equipe_a_id_equipe_id_fkey",
+        "n|con|public.torneio_disputa.torneio_disputa_equipe_a_id_equipe_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.torneio_disputa",
+        "n|sch|public",
+        "n|tbl|public.equipe",
+        "n|sch|public",
+        "n|col|public.torneio_disputa.equipe_a_id",
+        "n|col|public.equipe.id",
+        "e|uniqueness|public.equipe.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "torneio_disputa"
+      ],
+      "writes": [
+        "s|fk|public.torneio_disputa.torneio_disputa_equipe_b_id_equipe_id_fkey",
+        "n|fk|public.torneio_disputa.torneio_disputa_equipe_b_id_equipe_id_fkey",
+        "e|fk|public.torneio_disputa.torneio_disputa_equipe_b_id_equipe_id_fkey",
+        "n|con|public.torneio_disputa.torneio_disputa_equipe_b_id_equipe_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.torneio_disputa",
+        "n|sch|public",
+        "n|tbl|public.equipe",
+        "n|sch|public",
+        "n|col|public.torneio_disputa.equipe_b_id",
+        "n|col|public.equipe.id",
+        "e|uniqueness|public.equipe.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "torneio_disputa"
+      ],
+      "writes": [
+        "s|fk|public.torneio_disputa.torneio_disputa_vencedor_equipe_id_equipe_id_fkey",
+        "n|fk|public.torneio_disputa.torneio_disputa_vencedor_equipe_id_equipe_id_fkey",
+        "e|fk|public.torneio_disputa.torneio_disputa_vencedor_equipe_id_equipe_id_fkey",
+        "n|con|public.torneio_disputa.torneio_disputa_vencedor_equipe_id_equipe_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.torneio_disputa",
+        "n|sch|public",
+        "n|tbl|public.equipe",
+        "n|sch|public",
+        "n|col|public.torneio_disputa.vencedor_equipe_id",
+        "n|col|public.equipe.id",
+        "e|uniqueness|public.equipe.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "usuario"
+      ],
+      "writes": [
+        "s|fk|public.usuario.usuario_cargo_id_cargo_id_fkey",
+        "n|fk|public.usuario.usuario_cargo_id_cargo_id_fkey",
+        "e|fk|public.usuario.usuario_cargo_id_cargo_id_fkey",
+        "n|con|public.usuario.usuario_cargo_id_cargo_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.usuario",
+        "n|sch|public",
+        "n|tbl|public.cargo",
+        "n|sch|public",
+        "n|col|public.usuario.cargo_id",
+        "n|col|public.cargo.id",
+        "e|uniqueness|public.cargo.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "usuario"
+      ],
+      "writes": [
+        "s|fk|public.usuario.usuario_endereco_id_endereco_id_fkey",
+        "n|fk|public.usuario.usuario_endereco_id_endereco_id_fkey",
+        "e|fk|public.usuario.usuario_endereco_id_endereco_id_fkey",
+        "n|con|public.usuario.usuario_endereco_id_endereco_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.usuario",
+        "n|sch|public",
+        "n|tbl|public.endereco",
+        "n|sch|public",
+        "n|col|public.usuario.endereco_id",
+        "n|col|public.endereco.id",
+        "e|uniqueness|public.endereco.id"
+      ]
+    }
+  ],
+  "ddl": [
+    {
+      "schema": "public",
+      "name": "avaliacao",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "cargo",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "checklist_operacional",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "contribuicao_fornecedor",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "convidado_acesso",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "edicao_evento",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "endereco",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "equipe",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "escola",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "fornecedor_parceiro",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "membro_equipe",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "meta_recurso",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "modalidade",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "post_blog",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "torneio_disputa",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "usuario",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "cargo_nome",
+      "values": [
+        "organizador",
+        "avaliador",
+        "escola",
+        "participante",
+        "voluntario"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "name": "edicao_status",
+      "values": [
+        "planejamento",
+        "inscricoes",
+        "em_andamento",
+        "encerrado"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "name": "escola_status",
+      "values": [
+        "ativa",
+        "pendente"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "name": "fase_chaveamento",
+      "values": [
+        "oitavas",
+        "quartas",
+        "semi",
+        "final"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "name": "status_declaracao",
+      "values": [
+        "aguardando",
+        "aceito",
+        "recusado"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "name": "tipo_categoria_checklist",
+      "values": [
+        "acessibilidade",
+        "seguranca",
+        "infraestrutura"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "name": "tipo_parceiro",
+      "values": [
+        "fornecedor",
+        "patrocinador",
+        "doador"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "name": "tipo_post",
+      "values": [
+        "noticia",
+        "edital",
+        "resultado"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "torneio_disputa_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "equipe_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "avaliador_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "nota_criterios",
+      "type": "double precision",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "ponto_desempate",
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "observacoes",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "criado_em",
+      "type": "timestamp",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "now()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "cargo",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "cargo",
+      "name": "nome",
+      "type": "cargo_nome",
+      "typeSchema": "public",
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "cargo",
+      "name": "nivel_acesso",
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "checklist_operacional",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "checklist_operacional",
+      "name": "edicao_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "checklist_operacional",
+      "name": "tipo_categoria",
+      "type": "tipo_categoria_checklist",
+      "typeSchema": "public",
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "checklist_operacional",
+      "name": "item_descricao",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "checklist_operacional",
+      "name": "concluido",
+      "type": "boolean",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "false",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "checklist_operacional",
+      "name": "responsavel_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "contribuicao_fornecedor",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "contribuicao_fornecedor",
+      "name": "meta_recurso_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "contribuicao_fornecedor",
+      "name": "fornecedor_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "contribuicao_fornecedor",
+      "name": "quantidade_entregue",
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "contribuicao_fornecedor",
+      "name": "status_entrega",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "'pendente'",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "convidado_acesso",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "convidado_acesso",
+      "name": "edicao_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "convidado_acesso",
+      "name": "nome",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "convidado_acesso",
+      "name": "telefone",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "convidado_acesso",
+      "name": "voluntario_portaria_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "convidado_acesso",
+      "name": "entrada_em",
+      "type": "timestamp",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "ano",
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "tema",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "status",
+      "type": "edicao_status",
+      "typeSchema": "public",
+      "notNull": true,
+      "dimensions": 0,
+      "default": "'planejamento'",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "data_inicio",
+      "type": "date",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "data_fim",
+      "type": "date",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "edital_url",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "local_sediador_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "endereco",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "endereco",
+      "name": "logradouro",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "endereco",
+      "name": "numero",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "endereco",
+      "name": "bairro",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "endereco",
+      "name": "cep",
+      "type": "varchar(9)",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "endereco",
+      "name": "latitude",
+      "type": "double precision",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "endereco",
+      "name": "longitude",
+      "type": "double precision",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "nome",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "escola_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "edicao_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "mentor_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "ala_localizacao",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "status_inscricao",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "'pendente'",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "nome",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "cnpj",
+      "type": "varchar(18)",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "inscricao_municipal",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "telefone",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "email",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "status",
+      "type": "escola_status",
+      "typeSchema": "public",
+      "notNull": true,
+      "dimensions": 0,
+      "default": "'pendente'",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "usuario_gestor_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "endereco_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "fornecedor_parceiro",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "fornecedor_parceiro",
+      "name": "nome",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "fornecedor_parceiro",
+      "name": "tipo",
+      "type": "tipo_parceiro",
+      "typeSchema": "public",
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "fornecedor_parceiro",
+      "name": "cnpj",
+      "type": "varchar(18)",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "fornecedor_parceiro",
+      "name": "telefone",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "fornecedor_parceiro",
+      "name": "endereco_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "equipe_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "participante_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "qr_code_token",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "declaracao_pdf_url",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "status_declaracao",
+      "type": "status_declaracao",
+      "typeSchema": "public",
+      "notNull": true,
+      "dimensions": 0,
+      "default": "'aguardando'",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "presenca_confirmada",
+      "type": "boolean",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "false",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "meta_recurso",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "meta_recurso",
+      "name": "edicao_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "meta_recurso",
+      "name": "categoria",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "meta_recurso",
+      "name": "meta_total",
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "meta_recurso",
+      "name": "quantidade_atual",
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "0",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "modalidade",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "modalidade",
+      "name": "nome",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "modalidade",
+      "name": "descricao",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "post_blog",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "post_blog",
+      "name": "edicao_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "post_blog",
+      "name": "titulo",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "post_blog",
+      "name": "resumo",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "post_blog",
+      "name": "imagem_url",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "post_blog",
+      "name": "tipo_post",
+      "type": "tipo_post",
+      "typeSchema": "public",
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "post_blog",
+      "name": "publicado",
+      "type": "boolean",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "false",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "edicao_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "modalidade_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "equipe_a_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "equipe_b_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "fase_chaveamento",
+      "type": "fase_chaveamento",
+      "typeSchema": "public",
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "ala_local",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "horario_previsto",
+      "type": "timestamp",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "vencedor_equipe_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "gen_random_uuid()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "nome",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "email",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "senha_hash",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "cpf_cnpj",
+      "type": "varchar(18)",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "telefone",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "responsavel_legal",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "cargo_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "endereco_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "avaliacao_torneio_disputa_id_torneio_disputa_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "torneio_disputa_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "torneio_disputa",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "avaliacao_equipe_id_equipe_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "equipe_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "equipe",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "avaliacao_avaliador_id_usuario_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "avaliador_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "usuario",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "checklist_operacional",
+      "name": "checklist_operacional_edicao_id_edicao_evento_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "edicao_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "edicao_evento",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "checklist_operacional",
+      "name": "checklist_operacional_responsavel_id_usuario_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "responsavel_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "usuario",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "contribuicao_fornecedor",
+      "name": "contribuicao_fornecedor_meta_recurso_id_meta_recurso_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "meta_recurso_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "meta_recurso",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "contribuicao_fornecedor",
+      "name": "contribuicao_fornecedor_lnoUC4wWBejA_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "fornecedor_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "fornecedor_parceiro",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "convidado_acesso",
+      "name": "convidado_acesso_edicao_id_edicao_evento_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "edicao_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "edicao_evento",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "convidado_acesso",
+      "name": "convidado_acesso_voluntario_portaria_id_usuario_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "voluntario_portaria_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "usuario",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "edicao_evento_local_sediador_id_endereco_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "local_sediador_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "endereco",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "equipe_escola_id_escola_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "escola_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "escola",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "equipe_edicao_id_edicao_evento_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "edicao_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "edicao_evento",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "equipe_mentor_id_usuario_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "mentor_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "usuario",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "escola_usuario_gestor_id_usuario_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "usuario_gestor_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "usuario",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "escola_endereco_id_endereco_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "endereco_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "endereco",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "fornecedor_parceiro",
+      "name": "fornecedor_parceiro_endereco_id_endereco_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "endereco_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "endereco",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "membro_equipe_equipe_id_equipe_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "equipe_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "equipe",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "membro_equipe_participante_id_usuario_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "participante_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "usuario",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "meta_recurso",
+      "name": "meta_recurso_edicao_id_edicao_evento_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "edicao_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "edicao_evento",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "post_blog",
+      "name": "post_blog_edicao_id_edicao_evento_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "edicao_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "edicao_evento",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "torneio_disputa_edicao_id_edicao_evento_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "edicao_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "edicao_evento",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "torneio_disputa_modalidade_id_modalidade_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "modalidade_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "modalidade",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "torneio_disputa_equipe_a_id_equipe_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "equipe_a_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "equipe",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "torneio_disputa_equipe_b_id_equipe_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "equipe_b_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "equipe",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "torneio_disputa_vencedor_equipe_id_equipe_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "vencedor_equipe_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "equipe",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "usuario_cargo_id_cargo_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "cargo_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "cargo",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "usuario_endereco_id_endereco_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "endereco_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "endereco",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "avaliacao",
+      "name": "avaliacao_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "cargo",
+      "name": "cargo_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "checklist_operacional",
+      "name": "checklist_operacional_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "contribuicao_fornecedor",
+      "name": "contribuicao_fornecedor_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "convidado_acesso",
+      "name": "convidado_acesso_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "edicao_evento_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "endereco",
+      "name": "endereco_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "equipe",
+      "name": "equipe_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "escola_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "fornecedor_parceiro",
+      "name": "fornecedor_parceiro_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "membro_equipe_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "meta_recurso",
+      "name": "meta_recurso_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "modalidade",
+      "name": "modalidade_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "post_blog",
+      "name": "post_blog_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "torneio_disputa",
+      "name": "torneio_disputa_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "usuario_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "cargo",
+      "name": "cargo_nome_key",
+      "nameExplicit": false,
+      "columns": [
+        "nome"
+      ],
+      "nullsNotDistinct": false,
+      "entityType": "uniques"
+    },
+    {
+      "schema": "public",
+      "table": "edicao_evento",
+      "name": "edicao_evento_ano_key",
+      "nameExplicit": false,
+      "columns": [
+        "ano"
+      ],
+      "nullsNotDistinct": false,
+      "entityType": "uniques"
+    },
+    {
+      "schema": "public",
+      "table": "escola",
+      "name": "escola_cnpj_key",
+      "nameExplicit": false,
+      "columns": [
+        "cnpj"
+      ],
+      "nullsNotDistinct": false,
+      "entityType": "uniques"
+    },
+    {
+      "schema": "public",
+      "table": "membro_equipe",
+      "name": "membro_equipe_qr_code_token_key",
+      "nameExplicit": false,
+      "columns": [
+        "qr_code_token"
+      ],
+      "nullsNotDistinct": false,
+      "entityType": "uniques"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "usuario_email_key",
+      "nameExplicit": false,
+      "columns": [
+        "email"
+      ],
+      "nullsNotDistinct": false,
+      "entityType": "uniques"
+    },
+    {
+      "schema": "public",
+      "table": "usuario",
+      "name": "usuario_cpf_cnpj_key",
+      "nameExplicit": false,
+      "columns": [
+        "cpf_cnpj"
+      ],
+      "nullsNotDistinct": false,
+      "entityType": "uniques"
+    }
+  ]
+}

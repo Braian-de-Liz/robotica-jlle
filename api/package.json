@@ -4,7 +4,17 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "typecheck": "bun check"
+    "typecheck": "bun check",
+    "dev": "bun --hot src/index.ts",
+    "start": "bun dist/index.js",
+    "comp": "bun build ./src/index.ts --minify --target=bun --outfile dist/index.js",
+    "compT": "bun build ./src/index.ts --check --minify --target=bun --outfile dist/index.js",
+    "check": "tsc --noEmit",
+    "test": "bun test",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "bun --bun drizzle-kit migrate",
+    "db:push": "bun --bun drizzle-kit push",
+    "db:studio": "bun --bun drizzle-kit studio",
   },
   "devDependencies": {
     "@types/bun": "latest",
