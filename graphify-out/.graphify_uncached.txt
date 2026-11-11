@@ -1,0 +1,8 @@
+C:\Users\braian_l_silva\Desktop\robotica-jlle\README.md
+C:\Users\braian_l_silva\Desktop\robotica-jlle\frontend\README.md
+C:\Users\braian_l_silva\Desktop\robotica-jlle\frontend\index.html
+C:\Users\braian_l_silva\Desktop\robotica-jlle\frontend\public\favicon.svg
+C:\Users\braian_l_silva\Desktop\robotica-jlle\frontend\public\icons.svg
+C:\Users\braian_l_silva\Desktop\robotica-jlle\frontend\src\assets\hero.png
+C:\Users\braian_l_silva\Desktop\robotica-jlle\frontend\src\assets\react.svg
+C:\Users\braian_l_silva\Desktop\robotica-jlle\frontend\src\assets\vite.svg
