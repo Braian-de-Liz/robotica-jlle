@@ -1,0 +1,4 @@
+# variaveis de ambiente (qualquer pasta)
+.env
+.env.*
+!.env.example

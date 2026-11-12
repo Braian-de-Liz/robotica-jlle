@@ -1,0 +1,4483 @@
+{
+  "nodes": [
+    {
+      "id": "api_drizzle_config",
+      "label": "drizzle.config.ts",
+      "file_type": "code",
+      "source_file": "api/drizzle.config.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_index",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "api/index.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_index_start",
+      "label": "start()",
+      "file_type": "code",
+      "source_file": "api/index.ts",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_module",
+      "label": "module",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_type",
+      "label": "type",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_private",
+      "label": "private",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts",
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_typecheck",
+      "label": "typecheck",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_dev",
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_start",
+      "label": "start",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_comp",
+      "label": "comp",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_compt",
+      "label": "compT",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_check",
+      "label": "check",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_test",
+      "label": "test",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_db_generate",
+      "label": "db:generate",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_db_migrate",
+      "label": "db:migrate",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_db_push",
+      "label": "db:push",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_scripts_db_studio",
+      "label": "db:studio",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_devdependencies",
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_devdependencies_types_bun",
+      "label": "@types/bun@latest",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_types_bun",
+      "label": "@types/bun",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_devdependencies_types_autocannon",
+      "label": "@types/autocannon@7.12.7",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_types_autocannon",
+      "label": "@types/autocannon",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_devdependencies_autocannon",
+      "label": "autocannon@8.0.0",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_autocannon",
+      "label": "autocannon",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_devdependencies_drizzle_kit",
+      "label": "drizzle-kit@1.0.0-rc.5",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_drizzle_kit",
+      "label": "drizzle-kit",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_devdependencies_typescript",
+      "label": "typescript@7.0.2",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_json_ref_typescript",
+      "label": "typescript",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_fastify_cookie",
+      "label": "@fastify/cookie@11.1.3",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_fastify_cookie",
+      "label": "@fastify/cookie",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_fastify_cors",
+      "label": "@fastify/cors@11.3.1",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_fastify_cors",
+      "label": "@fastify/cors",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_fastify_jwt",
+      "label": "@fastify/jwt@10.2.5",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_fastify_jwt",
+      "label": "@fastify/jwt",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_fastify_multipart",
+      "label": "@fastify/multipart@10.1.6",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_fastify_multipart",
+      "label": "@fastify/multipart",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_fastify_rate_limit",
+      "label": "@fastify/rate-limit@11.2.1",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_fastify_rate_limit",
+      "label": "@fastify/rate-limit",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_fastify_swagger",
+      "label": "@fastify/swagger@9.9.2",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_fastify_swagger",
+      "label": "@fastify/swagger",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_fastify_swagger_ui",
+      "label": "@fastify/swagger-ui@6.1.2",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_fastify_swagger_ui",
+      "label": "@fastify/swagger-ui",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_fastify_type_provider_typebox",
+      "label": "@fastify/type-provider-typebox@6.3.0",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L34",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_fastify_type_provider_typebox",
+      "label": "@fastify/type-provider-typebox",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L34",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_drizzle_orm",
+      "label": "drizzle-orm@1.0.0-rc.5",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L35",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_drizzle_orm",
+      "label": "drizzle-orm",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L35",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_fastify",
+      "label": "fastify@5.12.7",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_fastify",
+      "label": "fastify",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_fastify_plugin",
+      "label": "fastify-plugin@6.0.1",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_fastify_plugin",
+      "label": "fastify-plugin",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_dependencies_typebox",
+      "label": "typebox@1.4.3",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_typebox",
+      "label": "typebox",
+      "file_type": "concept",
+      "source_file": "api/package.json",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_peerdependencies",
+      "label": "peerDependencies",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L40",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_peerdependencies_typescript",
+      "label": "typescript@^7",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_package_trusteddependencies",
+      "label": "trustedDependencies",
+      "file_type": "code",
+      "source_file": "api/package.json",
+      "source_location": "L43",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_app_app",
+      "label": "app.ts",
+      "file_type": "code",
+      "source_file": "api/src/app/app.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_app_app_buildapp",
+      "label": "BuildApp()",
+      "file_type": "code",
+      "source_file": "api/src/app/app.ts",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_hooks_authenticate",
+      "label": "authenticate.ts",
+      "file_type": "code",
+      "source_file": "api/src/hooks/authenticate.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_hooks_authorize",
+      "label": "authorize.ts",
+      "file_type": "code",
+      "source_file": "api/src/hooks/authorize.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_conn",
+      "label": "conn.ts",
+      "file_type": "code",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_conn_createdb",
+      "label": "createDb()",
+      "file_type": "code",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_conn_drizzledb",
+      "label": "DrizzleDB",
+      "file_type": "code",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L10",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_conn_fastify",
+      "label": "fastify",
+      "file_type": "code",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_conn_fastifyinstance",
+      "label": "FastifyInstance",
+      "file_type": "code",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L13",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_conn_op",
+      "label": "op",
+      "file_type": "code",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_env",
+      "label": "env.ts",
+      "file_type": "code",
+      "source_file": "api/src/lib/env.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_errors",
+      "label": "errors.ts",
+      "file_type": "code",
+      "source_file": "api/src/lib/errors.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_pg_errors",
+      "label": "pg-errors.ts",
+      "file_type": "code",
+      "source_file": "api/src/lib/pg-errors.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema",
+      "label": "schema.ts",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_cargonomeenum",
+      "label": "cargoNomeEnum",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_escolastatusenum",
+      "label": "escolaStatusEnum",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_edicaostatusenum",
+      "label": "edicaoStatusEnum",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_statusdeclaracaoenum",
+      "label": "statusDeclaracaoEnum",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L35",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_fasechaveamentoenum",
+      "label": "faseChaveamentoEnum",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_tipopostenum",
+      "label": "tipoPostEnum",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L48",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_tipocategoriachecklistenum",
+      "label": "tipoCategoriaChecklistEnum",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L50",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_tipoparceiroenum",
+      "label": "tipoParceiroEnum",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L56",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_cargo",
+      "label": "cargo",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_endereco",
+      "label": "endereco",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L72",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_modalidade",
+      "label": "modalidade",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L83",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_usuario",
+      "label": "usuario",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L94",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_escola",
+      "label": "escola",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L110",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_edicaoevento",
+      "label": "edicaoEvento",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L130",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_postblog",
+      "label": "postBlog",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L142",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_checklistoperacional",
+      "label": "checklistOperacional",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L154",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_convidadoacesso",
+      "label": "convidadoAcesso",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L165",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_equipe",
+      "label": "equipe",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L182",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_membroequipe",
+      "label": "membroEquipe",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L197",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_torneiodisputa",
+      "label": "torneioDisputa",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L218",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_avaliacao",
+      "label": "avaliacao",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L239",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_fornecedorparceiro",
+      "label": "fornecedorParceiro",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L261",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_metarecurso",
+      "label": "metaRecurso",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L270",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_schema_contribuicaofornecedor",
+      "label": "contribuicaoFornecedor",
+      "file_type": "code",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L283",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_storage",
+      "label": "storage.ts",
+      "file_type": "code",
+      "source_file": "api/src/lib/storage.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_lib_tokens",
+      "label": "tokens.ts",
+      "file_type": "code",
+      "source_file": "api/src/lib/tokens.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_routes_plugin_routes",
+      "label": "plugin.routes.ts",
+      "file_type": "code",
+      "source_file": "api/src/routes/plugin.routes.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_src_schemas_error_error_schema",
+      "label": "error.schema.ts",
+      "file_type": "code",
+      "source_file": "api/src/schemas/error/error.schema.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tests_helpers_app",
+      "label": "app.ts",
+      "file_type": "code",
+      "source_file": "api/tests/helpers/app.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tests_helpers_factories",
+      "label": "factories.ts",
+      "file_type": "code",
+      "source_file": "api/tests/helpers/factories.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tests_helpers_setup",
+      "label": "setup.ts",
+      "file_type": "code",
+      "source_file": "api/tests/helpers/setup.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tests_unit_env_test",
+      "label": "env.test.ts",
+      "file_type": "code",
+      "source_file": "api/tests/unit/env.test.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tests_unit_pg_errors_test",
+      "label": "pg-errors.test.ts",
+      "file_type": "code",
+      "source_file": "api/tests/unit/pg-errors.test.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tests_unit_tokens_test",
+      "label": "tokens.test.ts",
+      "file_type": "code",
+      "source_file": "api/tests/unit/tokens.test.ts",
+      "source_location": null,
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig",
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_lib",
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_target",
+      "label": "target",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_module",
+      "label": "module",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_moduledetection",
+      "label": "moduleDetection",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_jsx",
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_allowjs",
+      "label": "allowJs",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_types",
+      "label": "types",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_moduleresolution",
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_allowimportingtsextensions",
+      "label": "allowImportingTsExtensions",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_verbatimmodulesyntax",
+      "label": "verbatimModuleSyntax",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_noemit",
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_strict",
+      "label": "strict",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_skiplibcheck",
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "label": "noFallthroughCasesInSwitch",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_nouncheckedindexedaccess",
+      "label": "noUncheckedIndexedAccess",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_noimplicitoverride",
+      "label": "noImplicitOverride",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_nounusedlocals",
+      "label": "noUnusedLocals",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_nounusedparameters",
+      "label": "noUnusedParameters",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "api_tsconfig_compileroptions_nopropertyaccessfromindexsignature",
+      "label": "noPropertyAccessFromIndexSignature",
+      "file_type": "code",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_eslint_config",
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "frontend/eslint.config.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_private",
+      "label": "private",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_type",
+      "label": "type",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_scripts",
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_scripts_dev",
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_scripts_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_scripts_lint",
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_scripts_preview",
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_dependencies_react",
+      "label": "react@^19.3.1",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_dependencies_react_dom",
+      "label": "react-dom@^19.3.1",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_react_dom",
+      "label": "react-dom",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies",
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_babel_core",
+      "label": "@babel/core@^7.29.7",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_babel_core",
+      "label": "@babel/core",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_eslint_js",
+      "label": "@eslint/js@^10.0.1",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_eslint_js",
+      "label": "@eslint/js",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_rolldown_plugin_babel",
+      "label": "@rolldown/plugin-babel@^0.3.0",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_rolldown_plugin_babel",
+      "label": "@rolldown/plugin-babel",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_types_babel_core",
+      "label": "@types/babel__core@^7.20.5",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_types_babel_core",
+      "label": "@types/babel__core",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_types_node",
+      "label": "@types/node@^24.19.2",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_types_node",
+      "label": "@types/node",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_types_react",
+      "label": "@types/react@^19.3.0",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_types_react",
+      "label": "@types/react",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_types_react_dom",
+      "label": "@types/react-dom@^19.3.0",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_types_react_dom",
+      "label": "@types/react-dom",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_vitejs_plugin_react",
+      "label": "@vitejs/plugin-react@^6.1.2",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_vitejs_plugin_react",
+      "label": "@vitejs/plugin-react",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_babel_plugin_react_compiler",
+      "label": "babel-plugin-react-compiler@^1.0.0",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_babel_plugin_react_compiler",
+      "label": "babel-plugin-react-compiler",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_eslint",
+      "label": "eslint@^10.14.0",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_eslint",
+      "label": "eslint",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_eslint_plugin_react_hooks",
+      "label": "eslint-plugin-react-hooks@^7.1.1",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_eslint_plugin_react_hooks",
+      "label": "eslint-plugin-react-hooks",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_eslint_plugin_react_refresh",
+      "label": "eslint-plugin-react-refresh@^0.5.7",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_eslint_plugin_react_refresh",
+      "label": "eslint-plugin-react-refresh",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_globals",
+      "label": "globals@^17.13.0",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_globals",
+      "label": "globals",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_typescript",
+      "label": "typescript@~6.0.3",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_json_ref_typescript",
+      "label": "typescript",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_typescript_eslint",
+      "label": "typescript-eslint@^8.72.1",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_typescript_eslint",
+      "label": "typescript-eslint",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_package_devdependencies_vite",
+      "label": "vite@^8.3.6",
+      "file_type": "code",
+      "source_file": "frontend/package.json",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "ref_vite",
+      "label": "vite",
+      "file_type": "concept",
+      "source_file": "frontend/package.json",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app",
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_app",
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_main",
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app",
+      "label": "tsconfig.app.json",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions",
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_tsbuildinfofile",
+      "label": "tsBuildInfoFile",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_target",
+      "label": "target",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_lib",
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_module",
+      "label": "module",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_types",
+      "label": "types",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_allowarbitraryextensions",
+      "label": "allowArbitraryExtensions",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_skiplibcheck",
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_moduleresolution",
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_allowimportingtsextensions",
+      "label": "allowImportingTsExtensions",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "label": "verbatimModuleSyntax",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_moduledetection",
+      "label": "moduleDetection",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_noemit",
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_jsx",
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_nounusedlocals",
+      "label": "noUnusedLocals",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_nounusedparameters",
+      "label": "noUnusedParameters",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_erasablesyntaxonly",
+      "label": "erasableSyntaxOnly",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "label": "noFallthroughCasesInSwitch",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_app_include",
+      "label": "include",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig",
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_files",
+      "label": "files",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_references",
+      "label": "references",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node",
+      "label": "tsconfig.node.json",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions",
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_tsbuildinfofile",
+      "label": "tsBuildInfoFile",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_target",
+      "label": "target",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_lib",
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_types",
+      "label": "types",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_skiplibcheck",
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_module",
+      "label": "module",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_allowimportingtsextensions",
+      "label": "allowImportingTsExtensions",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "label": "verbatimModuleSyntax",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_moduledetection",
+      "label": "moduleDetection",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_noemit",
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_nounusedlocals",
+      "label": "noUnusedLocals",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_nounusedparameters",
+      "label": "noUnusedParameters",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_erasablesyntaxonly",
+      "label": "erasableSyntaxOnly",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "label": "noFallthroughCasesInSwitch",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_tsconfig_node_include",
+      "label": "include",
+      "file_type": "code",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_vite_config",
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "frontend/vite.config.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "api_drizzle_config",
+      "target": "ref_drizzle_kit",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/drizzle.config.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_index",
+      "target": "ref_fastify",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/index.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_index",
+      "target": "api_index_start",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_module",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_type",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_private",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_scripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_typecheck",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_dev",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_start",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_comp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_compt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_check",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_generate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_migrate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_push",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_scripts",
+      "target": "api_package_scripts_db_studio",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_devdependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_devdependencies",
+      "target": "api_package_devdependencies_types_bun",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_types_bun",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_devdependencies_types_bun",
+      "target": "ref_types_bun",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_devdependencies",
+      "target": "api_package_devdependencies_types_autocannon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_types_autocannon",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_devdependencies_types_autocannon",
+      "target": "ref_types_autocannon",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_devdependencies",
+      "target": "api_package_devdependencies_autocannon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_autocannon",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_devdependencies_autocannon",
+      "target": "ref_autocannon",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_devdependencies",
+      "target": "api_package_devdependencies_drizzle_kit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_drizzle_kit",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_devdependencies_drizzle_kit",
+      "target": "ref_drizzle_kit",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_devdependencies",
+      "target": "api_package_devdependencies_typescript",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_json_ref_typescript",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_devdependencies_typescript",
+      "target": "api_package_json_ref_typescript",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_fastify_cookie",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_fastify_cookie",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_fastify_cookie",
+      "target": "ref_fastify_cookie",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_fastify_cors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_fastify_cors",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_fastify_cors",
+      "target": "ref_fastify_cors",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_fastify_jwt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_fastify_jwt",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_fastify_jwt",
+      "target": "ref_fastify_jwt",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_fastify_multipart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_fastify_multipart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_fastify_multipart",
+      "target": "ref_fastify_multipart",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_fastify_rate_limit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_fastify_rate_limit",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_fastify_rate_limit",
+      "target": "ref_fastify_rate_limit",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_fastify_swagger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_fastify_swagger",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_fastify_swagger",
+      "target": "ref_fastify_swagger",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_fastify_swagger_ui",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_fastify_swagger_ui",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_fastify_swagger_ui",
+      "target": "ref_fastify_swagger_ui",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_fastify_type_provider_typebox",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_fastify_type_provider_typebox",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_fastify_type_provider_typebox",
+      "target": "ref_fastify_type_provider_typebox",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_drizzle_orm",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_drizzle_orm",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_drizzle_orm",
+      "target": "ref_drizzle_orm",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_fastify",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_fastify",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_fastify",
+      "target": "ref_fastify",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_fastify_plugin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_fastify_plugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_fastify_plugin",
+      "target": "ref_fastify_plugin",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies",
+      "target": "api_package_dependencies_typebox",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "ref_typebox",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_dependencies_typebox",
+      "target": "ref_typebox",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_peerdependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_peerdependencies",
+      "target": "api_package_peerdependencies_typescript",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_json_ref_typescript",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package_peerdependencies_typescript",
+      "target": "api_package_json_ref_typescript",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_package",
+      "target": "api_package_trusteddependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/package.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_app_app",
+      "target": "ref_fastify",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app/app.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_app_app",
+      "target": "ref_fastify_jwt",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app/app.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_app_app",
+      "target": "ref_fastify_rate_limit",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app/app.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_app_app",
+      "target": "ref_fastify_type_provider_typebox",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app/app.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_app_app",
+      "target": "api_src_app_app_buildapp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/app/app.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_conn",
+      "target": "api_src_lib_schema",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_conn",
+      "target": "ref_fastify_plugin",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_conn",
+      "target": "ref_drizzle_orm",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_conn",
+      "target": "ref_bun",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_conn",
+      "target": "ref_drizzle_orm",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_conn",
+      "target": "api_src_lib_conn_createdb",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_conn",
+      "target": "api_src_lib_conn_drizzledb",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_conn",
+      "target": "api_src_lib_conn_fastify",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_conn",
+      "target": "api_src_lib_conn_fastifyinstance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_conn",
+      "target": "api_src_lib_conn_op",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/conn.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "ref_drizzle_orm",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_cargonomeenum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_escolastatusenum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_edicaostatusenum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_statusdeclaracaoenum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_fasechaveamentoenum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_tipopostenum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_tipocategoriachecklistenum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_tipoparceiroenum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_cargo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_endereco",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_modalidade",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_usuario",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_escola",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_edicaoevento",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_postblog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_checklistoperacional",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_convidadoacesso",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_equipe",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_membroequipe",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L197",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_torneiodisputa",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L218",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_avaliacao",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L239",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_fornecedorparceiro",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L261",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_metarecurso",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L270",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_src_lib_schema",
+      "target": "api_src_lib_schema_contribuicaofornecedor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/src/lib/schema.ts",
+      "source_location": "L283",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig",
+      "target": "api_tsconfig_compileroptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_lib",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_target",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_module",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_moduledetection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_jsx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_allowjs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_types",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_moduleresolution",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_allowimportingtsextensions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_verbatimmodulesyntax",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_noemit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_strict",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_skiplibcheck",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_nouncheckedindexedaccess",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_noimplicitoverride",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_nounusedlocals",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_nounusedparameters",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "api_tsconfig_compileroptions",
+      "target": "api_tsconfig_compileroptions_nopropertyaccessfromindexsignature",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/tsconfig.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_eslint_config",
+      "target": "ref_eslint_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/eslint.config.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_eslint_config",
+      "target": "ref_globals",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/eslint.config.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_eslint_config",
+      "target": "ref_eslint_plugin_react_hooks",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/eslint.config.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_eslint_config",
+      "target": "ref_eslint_plugin_react_refresh",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/eslint.config.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_eslint_config",
+      "target": "ref_typescript_eslint",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/eslint.config.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_eslint_config",
+      "target": "ref_eslint",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/eslint.config.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "frontend_package_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "frontend_package_private",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "frontend_package_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "frontend_package_type",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "frontend_package_scripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_scripts",
+      "target": "frontend_package_scripts_dev",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_scripts",
+      "target": "frontend_package_scripts_build",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_scripts",
+      "target": "frontend_package_scripts_lint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_scripts",
+      "target": "frontend_package_scripts_preview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "frontend_package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_dependencies_react",
+      "target": "ref_react",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_react_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_react_dom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_dependencies_react_dom",
+      "target": "ref_react_dom",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "frontend_package_devdependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_babel_core",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_babel_core",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_babel_core",
+      "target": "ref_babel_core",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_eslint_js",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_eslint_js",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_eslint_js",
+      "target": "ref_eslint_js",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_rolldown_plugin_babel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_rolldown_plugin_babel",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_rolldown_plugin_babel",
+      "target": "ref_rolldown_plugin_babel",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_types_babel_core",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_types_babel_core",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_types_babel_core",
+      "target": "ref_types_babel_core",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_types_node",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_types_node",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_types_node",
+      "target": "ref_types_node",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_types_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_types_react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_types_react",
+      "target": "ref_types_react",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_types_react_dom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_types_react_dom",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_types_react_dom",
+      "target": "ref_types_react_dom",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_vitejs_plugin_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_vitejs_plugin_react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_vitejs_plugin_react",
+      "target": "ref_vitejs_plugin_react",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_babel_plugin_react_compiler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_babel_plugin_react_compiler",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_babel_plugin_react_compiler",
+      "target": "ref_babel_plugin_react_compiler",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_eslint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_eslint",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_eslint",
+      "target": "ref_eslint",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_eslint_plugin_react_hooks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_eslint_plugin_react_hooks",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_eslint_plugin_react_hooks",
+      "target": "ref_eslint_plugin_react_hooks",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_eslint_plugin_react_refresh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_eslint_plugin_react_refresh",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_eslint_plugin_react_refresh",
+      "target": "ref_eslint_plugin_react_refresh",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_globals",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_globals",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_globals",
+      "target": "ref_globals",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_typescript",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "frontend_package_json_ref_typescript",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_typescript",
+      "target": "frontend_package_json_ref_typescript",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_typescript_eslint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_typescript_eslint",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_typescript_eslint",
+      "target": "ref_typescript_eslint",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_vite",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package",
+      "target": "ref_vite",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_package_devdependencies_vite",
+      "target": "ref_vite",
+      "relation": "declares",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_assets_hero",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_assets_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_assets_vite",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_app_app",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_main",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_main",
+      "target": "ref_react_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_main",
+      "target": "frontend_src_index",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_main",
+      "target": "frontend_src_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app",
+      "target": "frontend_tsconfig_app_compileroptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_tsbuildinfofile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_target",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_lib",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_module",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_types",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_allowarbitraryextensions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_skiplibcheck",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_moduleresolution",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_allowimportingtsextensions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_moduledetection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_noemit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_jsx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_nounusedlocals",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_nounusedparameters",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_erasablesyntaxonly",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app_compileroptions",
+      "target": "frontend_tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_app",
+      "target": "frontend_tsconfig_app_include",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.app.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig",
+      "target": "frontend_tsconfig_files",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig",
+      "target": "frontend_tsconfig_references",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node",
+      "target": "frontend_tsconfig_node_compileroptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_tsbuildinfofile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_target",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_lib",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_types",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_skiplibcheck",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_module",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_allowimportingtsextensions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_moduledetection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_noemit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_nounusedlocals",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_nounusedparameters",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_erasablesyntaxonly",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node_compileroptions",
+      "target": "frontend_tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_tsconfig_node",
+      "target": "frontend_tsconfig_node_include",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/tsconfig.node.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_vite_config",
+      "target": "ref_vitejs_plugin_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/vite.config.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_vite_config",
+      "target": "ref_rolldown_plugin_babel",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/vite.config.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_vite_config",
+      "target": "ref_vite",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/vite.config.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_main",
+      "target": "frontend_src_app_app",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "failed_sources": [
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\drizzle\\20261111225137_inicial\\migration.sql"
+  ],
+  "skipped_sources": [
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\drizzle\\20261111225137_inicial\\snapshot.json"
+  ],
+  "extracted_sources": [
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\drizzle.config.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\drizzle\\20261111225137_inicial\\migration.sql",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\drizzle\\20261111225137_inicial\\snapshot.json",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\index.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\package.json",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\app\\app.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\hooks\\authenticate.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\hooks\\authorize.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\lib\\conn.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\lib\\env.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\lib\\errors.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\lib\\pg-errors.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\lib\\schema.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\lib\\storage.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\lib\\tokens.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\routes\\plugin.routes.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\src\\schemas\\error\\error.schema.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\tests\\helpers\\app.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\tests\\helpers\\factories.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\tests\\helpers\\setup.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\tests\\unit\\env.test.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\tests\\unit\\pg-errors.test.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\tests\\unit\\tokens.test.ts",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\api\\tsconfig.json",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\frontend\\eslint.config.js",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\frontend\\package.json",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\frontend\\src\\App.tsx",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\frontend\\src\\main.tsx",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\frontend\\tsconfig.app.json",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\frontend\\tsconfig.json",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\frontend\\tsconfig.node.json",
+    "C:\\Users\\braian_l_silva\\Desktop\\robotica-jlle\\frontend\\vite.config.ts"
+  ]
+}
