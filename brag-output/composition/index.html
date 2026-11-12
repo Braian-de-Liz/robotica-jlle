@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Sistema CJR — Demonstração PC e Celular</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --bg: #070b14;
+        --card-bg: rgba(15, 23, 42, 0.9);
+        --card-border: rgba(59, 130, 246, 0.3);
+        --text-primary: #f8fafc;
+        --text-muted: #94a3b8;
+        --blue-primary: #3b82f6;
+        --blue-vibrant: #2563eb;
+        --emerald: #10b981;
+        --amber: #f59e0b;
+        --font-main: "Inter", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background-color: var(--bg);
+        font-family: var(--font-main);
+        color: var(--text-primary);
+        -webkit-font-smoothing: antialiased;
+      }
+      #root {
+        width: 1920px;
+        height: 1080px;
+        position: relative;
+        overflow: hidden;
+        background: radial-gradient(circle at 45% 25%, #132247 0%, #070b14 75%);
+      }
+
+      /* Grid Texture */
+      .grid-overlay {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 60px 60px;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      /* Top Header */
+      .top-header {
+        position: absolute;
+        top: 28px;
+        left: 80px;
+        right: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+      }
+      .brand-box {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        background: rgba(15, 23, 42, 0.85);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 10px 24px;
+        border-radius: 9999px;
+        backdrop-filter: blur(12px);
+      }
+      .cjr-logo-icon {
+        width: 32px;
+        height: 32px;
+        background: url('assets/img/logo.png') center / contain no-repeat;
+        border-radius: 6px;
+      }
+      .brand-name {
+        font-weight: 800;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+      }
+      .feature-banner {
+        background: linear-gradient(135deg, rgba(37, 99, 235, 0.35), rgba(99, 102, 241, 0.35));
+        border: 1px solid rgba(59, 130, 246, 0.45);
+        color: #93c5fd;
+        padding: 10px 28px;
+        border-radius: 9999px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      /* STAGE: PC + MOBILE SIDE BY SIDE */
+      .stage-container {
+        position: absolute;
+        top: 130px;
+        left: 80px;
+        width: 1760px;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 10;
+      }
+
+      /* PC Window Mockup */
+      .pc-window {
+        width: 1240px;
+        height: 770px;
+        background: #0d1322;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 35px 90px rgba(0, 0, 0, 0.8), 0 0 60px rgba(37, 99, 235, 0.25);
+        position: relative;
+      }
+      .pc-bar {
+        height: 44px;
+        background: #111827;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        gap: 16px;
+      }
+      .pc-dots {
+        display: flex;
+        gap: 8px;
+      }
+      .pc-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+      .pc-dot.red { background: #ef4444; }
+      .pc-dot.yellow { background: #f59e0b; }
+      .pc-dot.green { background: #10b981; }
+      .pc-url-pill {
+        flex: 1;
+        max-width: 480px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        padding: 4px 16px;
+        font-size: 13px;
+        color: #94a3b8;
+        font-family: monospace;
+        text-align: center;
+      }
+      .pc-badge-tag {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #60a5fa;
+        background: rgba(37, 99, 235, 0.2);
+        padding: 4px 10px;
+        border-radius: 6px;
+      }
+      .pc-viewport {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        background-color: #070b14;
+      }
+      .screen-layer {
+        position: absolute;
+        inset: 0;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0;
+      }
+
+      /* Mobile Phone Mockup */
+      .mobile-frame {
+        width: 360px;
+        height: 750px;
+        background: #000000;
+        border: 10px solid #1e293b;
+        border-radius: 46px;
+        box-shadow: 0 35px 90px rgba(0, 0, 0, 0.85), 0 0 50px rgba(37, 99, 235, 0.2);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .mobile-notch-bar {
+        height: 32px;
+        background: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 20;
+      }
+      .mobile-island {
+        width: 90px;
+        height: 18px;
+        background: #111827;
+        border-radius: 12px;
+      }
+      .mobile-viewport {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        background-color: #070b14;
+      }
+      .mobile-screen-layer {
+        position: absolute;
+        inset: 0;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0;
+      }
+      .mobile-home-indicator {
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 9999px;
+        z-index: 20;
+      }
+
+      /* Bottom Narrative Banner */
+      .bottom-info-bar {
+        position: absolute;
+        bottom: 24px;
+        left: 80px;
+        right: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(15, 23, 42, 0.94);
+        border: 1px solid rgba(59, 130, 246, 0.4);
+        border-radius: 18px;
+        padding: 16px 36px;
+        backdrop-filter: blur(16px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+        z-index: 90;
+      }
+      .info-left {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .step-badge {
+        background: #2563eb;
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 15px;
+        padding: 6px 14px;
+        border-radius: 8px;
+      }
+      .step-title {
+        font-size: 28px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.01em;
+      }
+      .info-right {
+        font-size: 24px;
+        color: #93c5fd;
+        font-weight: 600;
+      }
+
+      /* Animated Mouse Cursor */
+      .mouse-cursor {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        z-index: 200;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        transform: translate(600px, 400px);
+      }
+      .cursor-ripple {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 2px solid #60a5fa;
+        background: rgba(96, 165, 250, 0.4);
+        opacity: 0;
+        transform: scale(0.4);
+        pointer-events: none;
+      }
+
+      /* Outro Final Overlay */
+      .outro-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(7, 11, 20, 0.94);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 150;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .outro-logo {
+        width: 150px;
+        height: 150px;
+        background: url('assets/img/logo.png') center / contain no-repeat;
+        border-radius: 30px;
+        box-shadow: 0 0 70px rgba(37, 99, 235, 0.8);
+        margin-bottom: 24px;
+      }
+      .outro-title {
+        font-size: 68px;
+        font-weight: 900;
+        letter-spacing: -0.03em;
+        text-align: center;
+        margin-bottom: 16px;
+        background: linear-gradient(135deg, #ffffff 40%, #60a5fa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .outro-tags {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 36px;
+      }
+      .outro-tag-item {
+        background: rgba(30, 41, 59, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 10px 24px;
+        border-radius: 9999px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #cbd5e1;
+      }
+      .outro-btn {
+        font-size: 26px;
+        font-weight: 800;
+        color: #ffffff;
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
+        padding: 14px 48px;
+        border-radius: 9999px;
+        box-shadow: 0 10px 40px rgba(37, 99, 235, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="25"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- Audio Elements -->
+      <audio id="bgm" class="clip" src="assets/music/track.mp3" data-start="0" data-duration="25" data-volume="0.65" data-fade-in="0.3" data-fade-out="1.5"></audio>
+      <audio id="sfx-click1" class="clip" src="assets/sfx/switch.ogg" data-start="3.4" data-duration="0.62" data-volume="0.75"></audio>
+      <audio id="sfx-click2" class="clip" src="assets/sfx/switch.ogg" data-start="5.1" data-duration="0.62" data-volume="0.75"></audio>
+      <audio id="sfx-click3" class="clip" src="assets/sfx/switch.ogg" data-start="6.5" data-duration="0.62" data-volume="0.8"></audio>
+      <audio id="sfx-click4" class="clip" src="assets/sfx/switch.ogg" data-start="10.5" data-duration="0.62" data-volume="0.75"></audio>
+      <audio id="sfx-click5" class="clip" src="assets/sfx/switch.ogg" data-start="14.5" data-duration="0.62" data-volume="0.75"></audio>
+      <audio id="sfx-click6" class="clip" src="assets/sfx/switch.ogg" data-start="18.5" data-duration="0.62" data-volume="0.75"></audio>
+      <audio id="sfx-impact" class="clip" src="assets/sfx/impact.ogg" data-start="22.5" data-duration="0.48" data-volume="0.85"></audio>
+
+      <div class="grid-overlay"></div>
+
+      <!-- Top Header -->
+      <div class="top-header" data-layout-ignore="true">
+        <div class="brand-box">
+          <div class="cjr-logo-icon"></div>
+          <span class="brand-name">SISTEMA CJR</span>
+        </div>
+        <div class="feature-banner" id="header-status">100% Responsivo · Desktop & Celular</div>
+      </div>
+
+      <!-- STAGE: PC AND PHONE SIDE BY SIDE -->
+      <div class="stage-container" data-hold>
+        <!-- PC Window -->
+        <div class="pc-window">
+          <div class="pc-bar" data-layout-ignore="true">
+            <div class="pc-dots">
+              <div class="pc-dot red"></div>
+              <div class="pc-dot yellow"></div>
+              <div class="pc-dot green"></div>
+            </div>
+            <div class="pc-url-pill" id="pc-url">cjr.joinville.gov.br/#/</div>
+            <div class="pc-badge-tag">Versão Desktop</div>
+          </div>
+          <div class="pc-viewport">
+            <div id="pc-layer1" class="screen-layer" style="background-image: url('assets/screens/desk_01_home.png'); opacity: 1;"></div>
+            <div id="pc-layer2" class="screen-layer" style="background-image: url('assets/screens/desk_02_home_scrolled.png');"></div>
+            <div id="pc-layer3" class="screen-layer" style="background-image: url('assets/screens/desk_03_entrar.png');"></div>
+            <div id="pc-layer3b" class="screen-layer" style="background-image: url('assets/screens/desk_03b_entrar_selected.png');"></div>
+            <div id="pc-layer4" class="screen-layer" style="background-image: url('assets/screens/desk_04_org_resumo.png');"></div>
+            <div id="pc-layer5" class="screen-layer" style="background-image: url('assets/screens/desk_05_org_mapa.png');"></div>
+            <div id="pc-layer6" class="screen-layer" style="background-image: url('assets/screens/desk_06_org_horarios.png');"></div>
+            <div id="pc-layer7" class="screen-layer" style="background-image: url('assets/screens/desk_07_org_fornecimento.png');"></div>
+          </div>
+        </div>
+
+        <!-- Mobile Phone -->
+        <div class="mobile-frame">
+          <div class="mobile-notch-bar" data-layout-ignore="true">
+            <div class="mobile-island"></div>
+          </div>
+          <div class="mobile-viewport">
+            <div id="mob-layer1" class="mobile-screen-layer" style="background-image: url('assets/screens/mob_01_home.png'); opacity: 1;"></div>
+            <div id="mob-layer2" class="mobile-screen-layer" style="background-image: url('assets/screens/mob_02_home_scrolled.png');"></div>
+            <div id="mob-layer3" class="mobile-screen-layer" style="background-image: url('assets/screens/mob_03_entrar.png');"></div>
+            <div id="mob-layer3b" class="mobile-screen-layer" style="background-image: url('assets/screens/mob_03b_entrar_selected.png');"></div>
+            <div id="mob-layer4" class="mobile-screen-layer" style="background-image: url('assets/screens/mob_04_org_resumo.png');"></div>
+            <div id="mob-layer5" class="mobile-screen-layer" style="background-image: url('assets/screens/mob_05_org_mapa.png');"></div>
+            <div id="mob-layer6" class="mobile-screen-layer" style="background-image: url('assets/screens/mob_06_org_horarios.png');"></div>
+            <div id="mob-layer7" class="mobile-screen-layer" style="background-image: url('assets/screens/mob_07_org_fornecimento.png');"></div>
+          </div>
+          <div class="mobile-home-indicator"></div>
+        </div>
+      </div>
+
+      <!-- Animated Mouse Cursor -->
+      <div class="mouse-cursor" id="cursor">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+          <path d="M4 2L20 9L13 13L9 20L4 2Z" fill="#3b82f6" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <div class="cursor-ripple" id="ripple"></div>
+      </div>
+
+      <!-- Bottom Narrative Bar -->
+      <div class="bottom-info-bar" id="info-bar" data-layout-allow-occlusion="true">
+        <div class="info-left">
+          <span class="step-badge" id="step-badge" data-layout-ignore="true">1 / 6</span>
+          <span class="step-title" id="step-title" data-layout-ignore="true">Portal Público: Home do Campeonato</span>
+        </div>
+        <div class="info-right" id="step-desc" data-layout-ignore="true">Acesso a edital, categorias e notícias em qualquer tela.</div>
+      </div>
+
+      <!-- Outro Overlay (Final) -->
+      <div class="outro-overlay" id="outro">
+        <div class="outro-logo"></div>
+        <h1 class="outro-title">O campeonato inteiro na palma da mão.</h1>
+        <div class="outro-tags" data-layout-ignore="true">
+          <div class="outro-tag-item">Joinville / SC</div>
+          <div class="outro-tag-item">Secretaria de Educação</div>
+          <div class="outro-tag-item">550 Competidores</div>
+          <div class="outro-tag-item">100% Responsivo</div>
+        </div>
+        <div class="outro-btn" data-layout-ignore="true">Sistema CJR — A Plataforma Oficial</div>
+      </div>
+    </div>
+
+    <!-- GSAP Script -->
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      // Elements
+      const cursor = "#cursor";
+      const ripple = "#ripple";
+
+      // Helper for ripple click effect
+      function clickEffect(time, isFirst = false) {
+        tl.fromTo(ripple, { scale: 0.3, opacity: 0.9 }, { scale: 1.6, opacity: 0, duration: 0.35, ease: "power2.out", immediateRender: isFirst }, time);
+      }
+
+      // ==========================================
+      // BEAT 1: 0.0s - 3.8s (PORTAL PÚBLICO HOME)
+      // ==========================================
+      // Initial state
+      tl.set(cursor, { x: 750, y: 350 });
+
+      // Cursor scrolls down slightly
+      tl.to(cursor, { y: 550, duration: 1.0, ease: "power1.inOut" }, 0.6);
+      tl.set("#pc-layer1", { opacity: 0 }, 1.6);
+      tl.set("#pc-layer2", { opacity: 1 }, 1.6);
+      tl.set("#mob-layer1", { opacity: 0 }, 1.6);
+      tl.set("#mob-layer2", { opacity: 1 }, 1.6);
+
+      // Cursor moves up to "Entrar" button in top-right of the desktop page
+      tl.to(cursor, { x: 1243, y: 224, duration: 1.2, ease: "power2.out" }, 2.0);
+      // Click on Entrar at 3.4s
+      clickEffect(3.4, true);
+
+      // ==========================================
+      // BEAT 2: 3.8s - 7.2s (TELA DE LOGIN)
+      // ==========================================
+      tl.set("#pc-layer2", { opacity: 0 }, 3.8);
+      tl.set("#pc-layer3", { opacity: 1 }, 3.8);
+      tl.set("#mob-layer2", { opacity: 0 }, 3.8);
+      tl.set("#mob-layer3", { opacity: 1 }, 3.8);
+      tl.set("#pc-url", { innerText: "cjr.joinville.gov.br/#/entrar" }, 3.8);
+      tl.set("#step-badge", { innerText: "2 / 6" }, 3.8);
+      tl.set("#step-title", { innerText: "Autenticação Unificada: 5 Perfis Integrados" }, 3.8);
+      tl.set("#step-desc", { innerText: "Escolha de perfil rápido: Participante, Escola, Avaliador e Org." }, 3.8);
+
+      // Cursor moves to "SD - Organização" account button
+      tl.to(cursor, { x: 994, y: 863, duration: 1.1, ease: "power2.out" }, 3.9);
+      clickEffect(5.1, false);
+
+      // When clicked, switch to selected state with credentials and checkmark
+      tl.set("#pc-layer3", { opacity: 0 }, 5.15);
+      tl.set("#pc-layer3b", { opacity: 1 }, 5.15);
+      tl.set("#mob-layer3", { opacity: 0 }, 5.15);
+      tl.set("#mob-layer3b", { opacity: 1 }, 5.15);
+
+      // Cursor moves to "Entrar" submit button
+      tl.to(cursor, { x: 994, y: 493, duration: 0.9, ease: "power2.out" }, 5.5);
+      clickEffect(6.5, false);
+
+      // ==========================================
+      // BEAT 3: 7.2s - 11.0s (ORGANIZADOR: RESUMO)
+      // ==========================================
+      tl.set("#pc-layer3b", { opacity: 0 }, 7.2);
+      tl.set("#pc-layer4", { opacity: 1 }, 7.2);
+      tl.set("#mob-layer3b", { opacity: 0 }, 7.2);
+      tl.set("#mob-layer4", { opacity: 1 }, 7.2);
+      tl.set("#pc-url", { innerText: "cjr.joinville.gov.br/#/painel/resumo" }, 7.2);
+      tl.set("#step-badge", { innerText: "3 / 6" }, 7.2);
+      tl.set("#step-title", { innerText: "Portal do Organizador: Resumo Operacional" }, 7.2);
+      tl.set("#step-desc", { innerText: "Painel em tempo real: equipes presentes, vistorias e alertas." }, 7.2);
+
+      // Cursor explores dashboard then moves to "Mapa" on sidebar
+      tl.to(cursor, { x: 600, y: 400, duration: 1.2, ease: "power1.inOut" }, 7.5);
+      tl.to(cursor, { x: 180, y: 362, duration: 1.2, ease: "power2.out" }, 9.2);
+      clickEffect(10.5, false);
+
+      // ==========================================
+      // BEAT 4: 11.0s - 15.0s (ORGANIZADOR: MAPA)
+      // ==========================================
+      tl.set("#pc-layer4", { opacity: 0 }, 11.0);
+      tl.set("#pc-layer5", { opacity: 1 }, 11.0);
+      tl.set("#mob-layer4", { opacity: 0 }, 11.0);
+      tl.set("#mob-layer5", { opacity: 1 }, 11.0);
+      tl.set("#pc-url", { innerText: "cjr.joinville.gov.br/#/painel/mapa" }, 11.0);
+      tl.set("#step-badge", { innerText: "4 / 6" }, 11.0);
+      tl.set("#step-title", { innerText: "Geolocalização: Mapa Interativo de Joinville" }, 11.0);
+      tl.set("#step-desc", { innerText: "Visualização das 30+ escolas, Expocentro e rotas de apoio." }, 11.0);
+
+      // Cursor hovers over pins on the map
+      tl.to(cursor, { x: 750, y: 450, duration: 1.4, ease: "power1.inOut" }, 11.4);
+      // Move to sidebar "Grade de Horários"
+      tl.to(cursor, { x: 180, y: 480, duration: 1.2, ease: "power2.out" }, 13.2);
+      clickEffect(14.5, false);
+
+      // ==========================================
+      // BEAT 5: 15.0s - 19.0s (GRADE DE HORÁRIOS)
+      // ==========================================
+      tl.set("#pc-layer5", { opacity: 0 }, 15.0);
+      tl.set("#pc-layer6", { opacity: 1 }, 15.0);
+      tl.set("#mob-layer5", { opacity: 0 }, 15.0);
+      tl.set("#mob-layer6", { opacity: 1 }, 15.0);
+      tl.set("#pc-url", { innerText: "cjr.joinville.gov.br/#/painel/horarios" }, 15.0);
+      tl.set("#step-badge", { innerText: "5 / 6" }, 15.0);
+      tl.set("#step-title", { innerText: "Grade Inteligente: Zero Choque de Horários" }, 15.0);
+      tl.set("#step-desc", { innerText: "Validação cruzada de alunos em modalidades e alas diferentes." }, 15.0);
+
+      // Cursor views schedule, then moves to "Fornecimento" on sidebar
+      tl.to(cursor, { x: 650, y: 420, duration: 1.3, ease: "power1.inOut" }, 15.4);
+      tl.to(cursor, { x: 180, y: 400, duration: 1.2, ease: "power2.out" }, 17.2);
+      clickEffect(18.5, false);
+
+      // ==========================================
+      // BEAT 6: 19.0s - 22.0s (FORNECIMENTO / METAS)
+      // ==========================================
+      tl.set("#pc-layer6", { opacity: 0 }, 19.0);
+      tl.set("#pc-layer7", { opacity: 1 }, 19.0);
+      tl.set("#mob-layer6", { opacity: 0 }, 19.0);
+      tl.set("#mob-layer7", { opacity: 1 }, 19.0);
+      tl.set("#pc-url", { innerText: "cjr.joinville.gov.br/#/painel/fornecimento" }, 19.0);
+      tl.set("#step-badge", { innerText: "6 / 6" }, 19.0);
+      tl.set("#step-title", { innerText: "Suprimentos & Vistorias em Tempo Real" }, 19.0);
+      tl.set("#step-desc", { innerText: "Controle de 150/200 lanches entregues, água e acessibilidade." }, 19.0);
+
+      tl.to(cursor, { x: 700, y: 450, duration: 1.2, ease: "power1.out" }, 19.3);
+      tl.to(cursor, { opacity: 0, duration: 0.3 }, 21.2);
+      tl.to("#info-bar", { opacity: 0, duration: 0.3 }, 21.6);
+
+      // ==========================================
+      // BEAT 7: 22.0s - 25.0s (OUTRO / FECHAMENTO)
+      // ==========================================
+      tl.fromTo("#outro", { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.45, ease: "power3.out" }, 22.0);
+      tl.fromTo(".outro-logo", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(1.5)" }, 22.15);
+      tl.fromTo(".outro-title", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4 }, 22.35);
+      tl.fromTo(".outro-tags", { opacity: 0 }, { opacity: 1, duration: 0.35 }, 22.5);
+      tl.fromTo(".outro-btn", { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35 }, 22.7);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
