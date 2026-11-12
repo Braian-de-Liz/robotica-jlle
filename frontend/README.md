@@ -76,3 +76,7 @@ export default defineConfig([
 ])
 
 ```
+
+## Acessibilidade e Inclusão (A11y)
+- Suporte a tradução para Libras (VLibras).
+- Modos de Alto Contraste e Audiodescrição para telas institucionais.
