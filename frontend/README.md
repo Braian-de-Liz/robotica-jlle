@@ -84,3 +84,7 @@ export default defineConfig([
 ## Georreferenciamento
 - Mapeamento das 12 Escolas Polo com mesas técnicas Cód. 43504.
 - Integração React-Leaflet com camadas OpenStreetMap.
+
+## Controle de Entrada e Credenciamento
+- Geração de bilhete digital com QR Code seguro após deferimento escolar.
+- Validação em portaria com encaminhamento direcionado de alas.
