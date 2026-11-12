@@ -1,294 +1,171 @@
 import {
-  boolean,
-  date,
-  doublePrecision,
-  integer,
-  pgEnum,
   pgTable,
-  text,
-  timestamp,
-  uuid,
+  serial,
   varchar,
-} from "drizzle-orm/pg-core";
+  text,
+  integer,
+  boolean,
+  timestamp,
+  numeric,
+  date,
+  time,
+} from 'drizzle-orm/pg-core';
 
-/* ------------------------------------------------------------------ */
-/* Enums (valores descritos no DER)                                    */
-/* ------------------------------------------------------------------ */
-
-export const cargoNomeEnum = pgEnum("cargo_nome", [
-  "organizador",
-  "avaliador",
-  "escola",
-  "participante",
-  "voluntario",
-]);
-
-export const escolaStatusEnum = pgEnum("escola_status", ["ativa", "pendente"]);
-
-export const edicaoStatusEnum = pgEnum("edicao_status", [
-  "planejamento",
-  "inscricoes",
-  "em_andamento",
-  "encerrado",
-]);
-
-export const statusDeclaracaoEnum = pgEnum("status_declaracao", [
-  "aguardando",
-  "aceito",
-  "recusado",
-]);
-
-export const faseChaveamentoEnum = pgEnum("fase_chaveamento", [
-  "oitavas",
-  "quartas",
-  "semi",
-  "final",
-]);
-
-export const tipoPostEnum = pgEnum("tipo_post", ["noticia", "edital", "resultado"]);
-
-export const tipoCategoriaChecklistEnum = pgEnum("tipo_categoria_checklist", [
-  "acessibilidade",
-  "seguranca",
-  "infraestrutura",
-]);
-
-export const tipoParceiroEnum = pgEnum("tipo_parceiro", [
-  "fornecedor",
-  "patrocinador",
-  "doador",
-]);
-
-/* ------------------------------------------------------------------ */
-/* Cadastros base                                                      */
-/* ------------------------------------------------------------------ */
-
-export const cargo = pgTable("cargo", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  nome: cargoNomeEnum("nome").notNull().unique(),
-  nivelAcesso: integer("nivel_acesso").notNull(),
+// 1. Cargos (Perfis de Acesso RBAC)
+export const cargos = pgTable('cargos', {
+  id: serial('id').primaryKey(),
+  nome: varchar('nome', { length: 60 }).notNull().unique(),
+  descricao: text('descricao'),
 });
 
-export const endereco = pgTable("endereco", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  logradouro: text("logradouro").notNull(),
-  numero: text("numero").notNull(),
-  bairro: text("bairro").notNull(),
-  cep: varchar("cep", { length: 9 }).notNull(),
-  // Pin no mapa (React-Leaflet)
-  latitude: doublePrecision("latitude"),
-  longitude: doublePrecision("longitude"),
+// 2. Endereços Georreferenciados (Pins do Mapa React-Leaflet)
+export const enderecos = pgTable('enderecos', {
+  id: serial('id').primaryKey(),
+  logradouro: varchar('logradouro', { length: 160 }).notNull(),
+  numero: varchar('numero', { length: 20 }),
+  bairro: varchar('bairro', { length: 100 }).notNull(),
+  cidade: varchar('cidade', { length: 100 }).notNull().default('Joinville'),
+  uf: varchar('uf', { length: 2 }).notNull().default('SC'),
+  cep: varchar('cep', { length: 15 }),
+  latitude: numeric('latitude', { precision: 10, scale: 7 }).notNull(),
+  longitude: numeric('longitude', { precision: 10, scale: 7 }).notNull(),
+  tipoPin: varchar('tipo_pin', { length: 30 }).notNull(), // ESCOLA | SEDIADOR | FORNECEDOR
 });
 
-export const modalidade = pgTable("modalidade", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  // Ex.: Lego | Seguidor Linha | ArtBot | Microbit | Estoura Balao
-  nome: text("nome").notNull(),
-  descricao: text("descricao"),
+// 3. Usuários Unificados
+export const usuarios = pgTable('usuarios', {
+  id: serial('id').primaryKey(),
+  nome: varchar('nome', { length: 150 }).notNull(),
+  email: varchar('email', { length: 150 }).notNull().unique(),
+  senhaHash: varchar('senha_hash', { length: 255 }).notNull(),
+  telefone: varchar('telefone', { length: 30 }),
+  cpfCnpj: varchar('cpf_cnpj', { length: 25 }).unique(),
+  responsavelLegal: varchar('responsavel_legal', { length: 150 }),
+  menorIdade: boolean('menor_idade').notNull().default(false),
+  cargoId: integer('cargo_id')
+    .notNull()
+    .references(() => cargos.id),
+  enderecoId: integer('endereco_id').references(() => enderecos.id),
+  criadoEm: timestamp('criado_em').notNull().defaultNow(),
 });
 
-/* ------------------------------------------------------------------ */
-/* Usuários e escolas                                                  */
-/* ------------------------------------------------------------------ */
-
-export const usuario = pgTable("usuario", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  nome: text("nome").notNull(),
-  email: text("email").notNull().unique(),
-  senhaHash: text("senha_hash").notNull(),
-  cpfCnpj: varchar("cpf_cnpj", { length: 18 }).notNull().unique(),
-  telefone: text("telefone"),
-  // Obrigatório se menor de idade
-  responsavelLegal: text("responsavel_legal"),
-  cargoId: uuid("cargo_id")
+// 4. Escolas Municipais Participantes
+export const escolas = pgTable('escolas', {
+  id: serial('id').primaryKey(),
+  nome: varchar('nome', { length: 180 }).notNull(),
+  inepCnpj: varchar('inep_cnpj', { length: 30 }).notNull().unique(),
+  telefone: varchar('telefone', { length: 30 }),
+  email: varchar('email', { length: 150 }).notNull(),
+  statusInscricao: varchar('status_inscricao', { length: 30 })
     .notNull()
-    .references(() => cargo.id),
-  // Nullable
-  enderecoId: uuid("endereco_id").references(() => endereco.id),
+    .default('DEFERIDA'),
+  possuiMesaCjr: boolean('possui_mesa_cjr').notNull().default(false),
+  enderecoId: integer('endereco_id').references(() => enderecos.id),
 });
 
-export const escola = pgTable("escola", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  nome: text("nome").notNull(),
-  cnpj: varchar("cnpj", { length: 18 }).notNull().unique(),
-  inscricaoMunicipal: text("inscricao_municipal"),
-  telefone: text("telefone"),
-  email: text("email"),
-  status: escolaStatusEnum("status").notNull().default("pendente"),
-  usuarioGestorId: uuid("usuario_gestor_id")
-    .notNull()
-    .references(() => usuario.id),
-  enderecoId: uuid("endereco_id")
-    .notNull()
-    .references(() => endereco.id),
+// 5. Torneios e Modalidades (ETP SEI Nº 0020793169/2024 - SED.URC)
+export const torneiosModalidades = pgTable('torneios_modalidades', {
+  id: serial('id').primaryKey(),
+  edicaoAno: integer('edicao_ano').notNull().default(2026),
+  nomeModalidade: varchar('nome_modalidade', { length: 100 }).notNull(),
+  codigoItemEtp: varchar('codigo_item_etp', { length: 20 }), // 43504 | 43505 | 43506
+  alaPadrao: varchar('ala_padrao', { length: 80 }).notNull(),
+  vagasEquipes: integer('vagas_equipes').notNull().default(15),
 });
 
-/* ------------------------------------------------------------------ */
-/* Edição do evento                                                    */
-/* ------------------------------------------------------------------ */
-
-export const edicaoEvento = pgTable("edicao_evento", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  ano: integer("ano").notNull().unique(),
-  tema: text("tema"),
-  status: edicaoStatusEnum("status").notNull().default("planejamento"),
-  dataInicio: date("data_inicio").notNull(),
-  dataFim: date("data_fim").notNull(),
-  editalUrl: text("edital_url"),
-  // sedia_evento
-  localSediadorId: uuid("local_sediador_id").references(() => endereco.id),
+// 6. Equipes Competidoras
+export const equipes = pgTable('equipes', {
+  id: serial('id').primaryKey(),
+  nome: varchar('nome', { length: 120 }).notNull(),
+  escolaId: integer('escola_id')
+    .notNull()
+    .references(() => escolas.id),
+  mentorUsuarioId: integer('mentor_usuario_id').references(() => usuarios.id),
+  modalidadePrincipal: varchar('modalidade_principal', { length: 80 }).notNull(),
+  alaAlocada: varchar('ala_alocada', { length: 80 }).notNull(),
+  statusValidacao: varchar('status_validacao', { length: 30 })
+    .notNull()
+    .default('VALIDADA'),
 });
 
-export const postBlog = pgTable("post_blog", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  edicaoId: uuid("edicao_id")
+// 7. Participantes e Declarações Assinadas pelos Pais + QR Code
+export const participantesDeclaracoes = pgTable('participantes_declaracoes', {
+  id: serial('id').primaryKey(),
+  alunoUsuarioId: integer('aluno_usuario_id')
     .notNull()
-    .references(() => edicaoEvento.id),
-  titulo: text("titulo").notNull(),
-  resumo: text("resumo"),
-  imagemUrl: text("imagem_url"),
-  tipoPost: tipoPostEnum("tipo_post").notNull(),
-  publicado: boolean("publicado").notNull().default(false),
+    .references(() => usuarios.id),
+  equipeId: integer('equipe_id')
+    .notNull()
+    .references(() => equipes.id),
+  arquivoDeclaracaoUrl: text('arquivo_declaracao_url'),
+  statusDeclaracao: varchar('status_declaracao', { length: 25 })
+    .notNull()
+    .default('AGUARDANDO'), // AGUARDANDO | ACEITO | RECUSADO
+  qrCodeToken: varchar('qr_code_token', { length: 120 }).notNull().unique(),
+  checkinPortariaEm: timestamp('checkin_portaria_em'),
 });
 
-export const checklistOperacional = pgTable("checklist_operacional", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  edicaoId: uuid("edicao_id")
+// 8. Horários das Disputas e Chaveamento (Sem Conflito entre Modalidades)
+export const horariosChaveamento = pgTable('horarios_chaveamento', {
+  id: serial('id').primaryKey(),
+  torneioId: integer('torneio_id')
     .notNull()
-    .references(() => edicaoEvento.id),
-  tipoCategoria: tipoCategoriaChecklistEnum("tipo_categoria").notNull(),
-  itemDescricao: text("item_descricao").notNull(),
-  concluido: boolean("concluido").notNull().default(false),
-  responsavelId: uuid("responsavel_id").references(() => usuario.id),
+    .references(() => torneiosModalidades.id),
+  fase: varchar('fase', { length: 60 }).notNull(),
+  alaMesa: varchar('ala_mesa', { length: 80 }).notNull(),
+  dataDisputa: date('data_disputa').notNull(),
+  horarioInicio: time('horario_inicio').notNull(),
+  horarioFim: time('horario_fim').notNull(),
+  equipeAId: integer('equipe_a_id')
+    .notNull()
+    .references(() => equipes.id),
+  equipeBId: integer('equipe_b_id').references(() => equipes.id),
+  placarA: numeric('placar_a', { precision: 6, scale: 2 }),
+  placarB: numeric('placar_b', { precision: 6, scale: 2 }),
 });
 
-export const convidadoAcesso = pgTable("convidado_acesso", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  edicaoId: uuid("edicao_id")
+// 9. Avaliações e Desempate por Banca Ímpar
+export const avaliacoes = pgTable('avaliacoes', {
+  id: serial('id').primaryKey(),
+  equipeId: integer('equipe_id')
     .notNull()
-    .references(() => edicaoEvento.id),
-  nome: text("nome").notNull(),
-  telefone: text("telefone"),
-  voluntarioPortariaId: uuid("voluntario_portaria_id")
+    .references(() => equipes.id),
+  avaliadorUsuarioId: integer('avaliador_usuario_id')
     .notNull()
-    .references(() => usuario.id),
-  entradaEm: timestamp("entrada_em"),
+    .references(() => usuarios.id),
+  categoria: varchar('categoria', { length: 80 }).notNull(),
+  notaDesempenhoTecnico: numeric('nota_desempenho_tecnico', { precision: 5, scale: 2 }).notNull(),
+  notaInovacaoDesign: numeric('nota_inovacao_design', { precision: 5, scale: 2 }).notNull(),
+  notaTrabalhoEquipe: numeric('nota_trabalho_equipe', { precision: 5, scale: 2 }).notNull(),
+  observacoes: text('observacoes'),
+  pontoDesempateBancaImpar: integer('ponto_desempate_banca_impar').default(0),
+  avaliadoEm: timestamp('avaliado_em').notNull().defaultNow(),
 });
 
-/* ------------------------------------------------------------------ */
-/* Equipes                                                             */
-/* ------------------------------------------------------------------ */
-
-export const equipe = pgTable("equipe", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  nome: text("nome").notNull(),
-  escolaId: uuid("escola_id")
-    .notNull()
-    .references(() => escola.id),
-  edicaoId: uuid("edicao_id")
-    .notNull()
-    .references(() => edicaoEvento.id),
-  mentorId: uuid("mentor_id").references(() => usuario.id),
-  // Ex.: Ala 01, Ala 02
-  alaLocalizacao: text("ala_localizacao"),
-  statusInscricao: text("status_inscricao").notNull().default("pendente"),
+// 10. Fornecedores e Cotas de Suprimentos (KPI ex: 150/200)
+export const cotasSuprimentos = pgTable('cotas_suprimentos', {
+  id: serial('id').primaryKey(),
+  categoriaItem: varchar('categoria_item', { length: 120 }).notNull(),
+  metaTotal: integer('meta_total').notNull(),
+  quantidadeAtual: integer('quantidade_atual').notNull().default(0),
+  unidade: varchar('unidade', { length: 40 }).notNull(),
 });
 
-export const membroEquipe = pgTable("membro_equipe", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  equipeId: uuid("equipe_id")
-    .notNull()
-    .references(() => equipe.id),
-  participanteId: uuid("participante_id")
-    .notNull()
-    .references(() => usuario.id),
-  // Ingresso QR Code
-  qrCodeToken: text("qr_code_token").notNull().unique(),
-  declaracaoPdfUrl: text("declaracao_pdf_url"),
-  statusDeclaracao: statusDeclaracaoEnum("status_declaracao")
-    .notNull()
-    .default("aguardando"),
-  presencaConfirmada: boolean("presenca_confirmada").notNull().default(false),
+// 11. Checklist de Acessibilidade e Segurança do Local
+export const checklistInspecaoLocal = pgTable('checklist_inspecao_local', {
+  id: serial('id').primaryKey(),
+  categoria: varchar('categoria', { length: 30 }).notNull(), // ACESSIBILIDADE | SEGURANCA
+  itemTitulo: varchar('item_titulo', { length: 180 }).notNull(),
+  localReferencia: varchar('local_referencia', { length: 120 }).notNull(),
+  conferido: boolean('conferido').notNull().default(false),
+  responsavelConferencia: varchar('responsavel_conferencia', { length: 120 }),
 });
 
-/* ------------------------------------------------------------------ */
-/* Torneio e avaliação                                                 */
-/* ------------------------------------------------------------------ */
-
-export const torneioDisputa = pgTable("torneio_disputa", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  edicaoId: uuid("edicao_id")
-    .notNull()
-    .references(() => edicaoEvento.id),
-  modalidadeId: uuid("modalidade_id")
-    .notNull()
-    .references(() => modalidade.id),
-  equipeAId: uuid("equipe_a_id")
-    .notNull()
-    .references(() => equipe.id),
-  equipeBId: uuid("equipe_b_id")
-    .notNull()
-    .references(() => equipe.id),
-  faseChaveamento: faseChaveamentoEnum("fase_chaveamento").notNull(),
-  // Ex.: Ala 01
-  alaLocal: text("ala_local"),
-  horarioPrevisto: timestamp("horario_previsto"),
-  vencedorEquipeId: uuid("vencedor_equipe_id").references(() => equipe.id),
-});
-
-export const avaliacao = pgTable("avaliacao", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  torneioDisputaId: uuid("torneio_disputa_id")
-    .notNull()
-    .references(() => torneioDisputa.id),
-  equipeId: uuid("equipe_id")
-    .notNull()
-    .references(() => equipe.id),
-  avaliadorId: uuid("avaliador_id")
-    .notNull()
-    .references(() => usuario.id),
-  notaCriterios: doublePrecision("nota_criterios").notNull(),
-  // Soma ímpar de avaliadores
-  pontoDesempate: integer("ponto_desempate"),
-  observacoes: text("observacoes"),
-  criadoEm: timestamp("criado_em").notNull().defaultNow(),
-});
-
-/* ------------------------------------------------------------------ */
-/* Fornecedores e recursos                                             */
-/* ------------------------------------------------------------------ */
-
-export const fornecedorParceiro = pgTable("fornecedor_parceiro", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  nome: text("nome").notNull(),
-  tipo: tipoParceiroEnum("tipo").notNull(),
-  cnpj: varchar("cnpj", { length: 18 }),
-  telefone: text("telefone"),
-  enderecoId: uuid("endereco_id").references(() => endereco.id),
-});
-
-export const metaRecurso = pgTable("meta_recurso", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  edicaoId: uuid("edicao_id")
-    .notNull()
-    .references(() => edicaoEvento.id),
-  // Ex.: Alimentacao, Kits, Brindes
-  categoria: text("categoria").notNull(),
-  // Ex.: 200
-  metaTotal: integer("meta_total").notNull(),
-  // Ex.: 150
-  quantidadeAtual: integer("quantidade_atual").notNull().default(0),
-});
-
-export const contribuicaoFornecedor = pgTable("contribuicao_fornecedor", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  metaRecursoId: uuid("meta_recurso_id")
-    .notNull()
-    .references(() => metaRecurso.id),
-  fornecedorId: uuid("fornecedor_id")
-    .notNull()
-    .references(() => fornecedorParceiro.id),
-  // Ex.: 100
-  quantidadeEntregue: integer("quantidade_entregue").notNull(),
-  statusEntrega: text("status_entrega").notNull().default("pendente"),
+// 12. Convidados e Visitantes na Portaria (Portal do Voluntário)
+export const portariaConvidados = pgTable('portaria_convidados', {
+  id: serial('id').primaryKey(),
+  nomeCompleto: varchar('nome_completo', { length: 150 }).notNull(),
+  telefone: varchar('telefone', { length: 30 }).notNull(),
+  voluntarioUsuarioId: integer('voluntario_usuario_id').references(() => usuarios.id),
+  entradaRegistradaEm: timestamp('entrada_registrada_em').notNull().defaultNow(),
 });
