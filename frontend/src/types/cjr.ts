@@ -1,12 +1,14 @@
 export type StatusDeclaracao = 'aguardando' | 'aceito' | 'recusado';
 
+export type PerfilAcesso = 'participante' | 'escola' | 'avaliador' | 'organizador' | 'voluntario';
+
 export type TipoPinMapa = 'sediador' | 'escola' | 'fornecedor';
 
 export interface PinMapa {
   id: string;
   nome: string;
   tipo: TipoPinMapa;
-  subtitulo: string;
+  papel: string;
   detalhe: string;
   endereco: string;
   lat: number;
@@ -23,12 +25,24 @@ export interface PostBlog {
   imagemUrl: string;
 }
 
-export interface CardNoticia {
+export interface Aviso {
   id: string;
-  tag: string;
-  titulo: string;
-  horario: string;
-  corDestaque: 'blue' | 'purple' | 'red';
+  assunto: string;
+  texto: string;
+  quando: string;
+}
+
+export interface SessaoDisputa {
+  hora: string;
+  rotulo: string;
+  duracao: string;
+}
+
+export interface ModalidadeInscrita {
+  nome: string;
+  ala: string;
+  local: string;
+  sessoes: SessaoDisputa[];
 }
 
 export interface ParticipanteInscrito {
@@ -41,12 +55,7 @@ export interface ParticipanteInscrito {
   escolaNome: string;
   equipeId: string;
   equipeNome: string;
-  modalidades: {
-    nome: string;
-    horario: string;
-    ala: string;
-    mesaPista: string;
-  }[];
+  modalidades: ModalidadeInscrita[];
   qrCodeToken: string;
   arquivoDeclaracao: string;
   dataEnvioDeclaracao: string;
@@ -62,34 +71,45 @@ export interface EquipeEscola {
   modalidadePrincipal: string;
   modalidadeSecundaria?: string;
   mentorNome: string;
-  mentorMatricula: string;
-  voluntarioNome: string;
-  alaAlocada: string;
+  local: string;
   horarioPrincipal: string;
   alunosCount: number;
   avaliada: boolean;
   notaTotal?: number;
 }
 
+export interface MentorEscola {
+  id: string;
+  nome: string;
+  area: string;
+}
+
+export interface VoluntarioEscola {
+  id: string;
+  nome: string;
+  alocacao: string;
+  telefone: string;
+}
+
+export type FaseChaveamento = 'quartas' | 'semifinal' | 'final';
+
 export interface PartidaChaveamento {
   id: string;
-  modalidade: string;
-  fase: 'quartas' | 'semifinal' | 'final';
+  fase: FaseChaveamento;
   codigo: string;
   horario: string;
-  ala: string;
+  local: string;
   equipeA: string;
   pontosA: number | null;
   equipeB: string;
   pontosB: number | null;
   vencedor?: string;
-  destaqueParticipante?: boolean;
 }
 
 export interface EmpateCategoria {
   id: string;
   categoria: string;
-  ala: string;
+  local: string;
   equipeA: string;
   escolaA: string;
   equipeB: string;
@@ -97,15 +117,18 @@ export interface EmpateCategoria {
   pontuacaoEmpatada: number;
   votosJuizes: {
     avaliadorNome: string;
+    instituicao: string;
+    voce?: boolean;
     votoEquipe: string | null;
   }[];
   resolvido: boolean;
   vencedorDesempate?: string;
 }
 
-export interface MetaFornecedorKPI {
+export interface MetaFornecimento {
   id: string;
-  itemRecurso: string;
+  item: string;
+  detalhe: string;
   metaTotal: number;
   unidade: string;
   entregas: {
@@ -114,11 +137,11 @@ export interface MetaFornecedorKPI {
   }[];
 }
 
-export interface ItemChecklistLocal {
+export interface ItemVistoria {
   id: string;
   tipo: 'acessibilidade' | 'seguranca';
   titulo: string;
-  setorAla: string;
+  setor: string;
   responsavel: string;
   conferido: boolean;
 }
@@ -128,15 +151,33 @@ export interface ConvidadoPortaria {
   nome: string;
   telefone: string;
   horarioEntrada: string;
-  voluntarioResponsavel: string;
+  atendente: string;
 }
 
-export interface HorarioTorneioGrade {
+export interface JanelaHorario {
   id: string;
-  modalidade: string;
-  fase: string;
+  titulo: string;
+  detalhe: string;
   ala: string;
-  horarioInicio: string;
-  horarioFim: string;
-  equipesEnvolvidas: string[];
+  inicio: string;
+  fim: string;
+  equipes: string[];
+}
+
+export interface EdicaoCampeonato {
+  ano: number;
+  numero: number;
+  equipes: number;
+  escolas?: number;
+  tema: string;
+  sede: string;
+}
+
+export interface ModalidadeOficial {
+  id: string;
+  nome: string;
+  campo: 'mesa' | 'mesa-linha' | 'sumo' | 'hexagono' | 'folha' | 'estande';
+  medida: string;
+  descricao: string;
+  formato: string;
 }

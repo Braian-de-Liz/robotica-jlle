@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Tokens do sistema CJR
+   Paleta: azul da marca (amostrado do logo, #0013B0) e branco.
+   Vermelho aparece só quando algo exige atenção de alguém.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* Azul */
+  --blue-950: #03072e;
+  --blue-900: #050c52;
+  --blue-800: #000e86;
+  --blue-700: #0013b0;
+  --blue-600: #0f2bd6;
+  --blue-500: #2c4df4;
+  --blue-400: #6a82ff;
+  --blue-300: #a5b4ff;
+  --blue-200: #cdd5ff;
+  --blue-100: #e4e9ff;
+  --blue-50: #f2f4ff;
+
+  /* Vermelho (atenção) */
+  --red-700: #ae140b;
+  --red-600: #d21e13;
+  --red-500: #f42b1d;
+  --red-100: #ffded9;
+  --red-50: #fff4f2;
+
+  /* Papéis */
+  --text: #080e3b;
+  --text-2: #363e6c;
+  --text-3: #5c648e;
+  --text-4: #8b92b5;
+
+  --bg: #f6f7fd;
+  --bg-raised: #ffffff;
+  --bg-sunk: #f2f4ff;
+
+  --border: #dfe3f4;
+  --border-strong: #c2c9e5;
+
+  --brand-bg: var(--blue-700);
+  --brand-bg-deep: var(--blue-800);
+  --on-brand: #ffffff;
+  --on-brand-2: var(--blue-200);
+
+  --accent-bg: var(--blue-600);
+  --accent-bg-hover: var(--blue-700);
+  --accent-text: var(--blue-600);
+  --accent-soft: var(--blue-50);
+  --accent-soft-2: var(--blue-100);
+
+  --danger-bg: var(--red-600);
+  --danger-bg-hover: var(--red-700);
+  --danger-text: var(--red-600);
+  --danger-soft: var(--red-50);
+  --danger-line: var(--red-100);
+
+  --focus: var(--blue-500);
+
+  /* Tipografia: uma família, a largura das letras faz a hierarquia */
+  --font: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Corpo em 16px (mínimo recomendado para leitura); apoio em 14px */
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.625rem;
+  --fs-2xl: 2.125rem;
+
+  /* Raios: controles pequenos, superfícies médias, blocos grandes */
+  --r-control: 10px;
+  --r-surface: 16px;
+  --r-block: 28px;
+
+  /* Elevação (tingida de azul, usada com parcimônia) */
+  --shadow-rise: 0 8px 24px -12px rgb(0 19 176 / 0.28);
+  --shadow-pop: 0 24px 64px -16px rgb(3 7 46 / 0.4);
+
+  /* Movimento */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 140ms;
+  --dur-2: 240ms;
+  --dur-3: 420ms;
+
+  /* Medidas do painel */
+  --side-w: 272px;
+  --tabs-h: 64px;
+  --top-h: 56px;
+}
+
+/* Alto contraste: fundo escuro, texto branco, azuis claros para ação */
+:root[data-contraste='alto'] {
+  color-scheme: dark;
+
+  --text: #ffffff;
+  --text-2: #ffffff;
+  --text-3: #dfe5ff;
+  --text-4: #c3ccff;
+
+  --bg: #000000;
+  --bg-raised: #05061c;
+  --bg-sunk: #0c0f38;
+
+  --border: #7f8cff;
+  --border-strong: #ffffff;
+
+  --brand-bg: #000000;
+  --brand-bg-deep: #000000;
+  --on-brand-2: #ffffff;
+
+  --accent-bg: #2c4df4;
+  --accent-bg-hover: #4a66ff;
+  --accent-text: #b7c3ff;
+  --accent-soft: #0c0f38;
+  --accent-soft-2: #1a2070;
+
+  --danger-bg: #d21e13;
+  --danger-text: #ff9a90;
+  --danger-soft: #2b0906;
+  --danger-line: #ff9a90;
+
+  --focus: #ffffff;
+}
