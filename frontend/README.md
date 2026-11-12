@@ -80,3 +80,7 @@ export default defineConfig([
 ## Acessibilidade e Inclusão (A11y)
 - Suporte a tradução para Libras (VLibras).
 - Modos de Alto Contraste e Audiodescrição para telas institucionais.
+
+## Georreferenciamento
+- Mapeamento das 12 Escolas Polo com mesas técnicas Cód. 43504.
+- Integração React-Leaflet com camadas OpenStreetMap.
